@@ -1,0 +1,39 @@
+pipeline {
+    agent any
+
+    environment {
+        BROWSERSTACK_USERNAME = credentials('browserstack-username')
+        BROWSERSTACK_ACCESS_KEY = credentials('browserstack-access-key')
+    }
+
+    tools {
+        maven 'Maven 3.8.6'     // Match this with Maven installed on Jenkins
+        jdk 'JDK 11'            // Match your Java version
+    }
+
+    stages {
+        stage('Checkout Code') {
+            steps {
+                git 'https://github.com/prajakta199/Selenium_Testng'  // Replace with your repo URL
+            }
+        }
+
+        stage('Build Project') {
+            steps {
+                sh 'mvn clean compile'
+            }
+        }
+
+        stage('Run Selenium Tests on BrowserStack') {
+            steps {
+                sh 'mvn test'
+            }
+        }
+    }
+
+    post {
+        always {
+            junit 'test-output/testng-results.xml' // Adjust if your result path is different
+        }
+    }
+}

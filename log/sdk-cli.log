@@ -1,0 +1,1293 @@
+2025-06-18T11:52:14.974Z CLI info [main]     Server listening on port: 5400
+2025-06-18T11:52:15.273Z CLI info [testhub:module]  [prajaktapednekar_LTJbMS]   [06643c52-9fe8-4557-8ed9-02944c9e875e]  startBuild: payload=
+
+{"started_at":"2025-06-18T11:52:15.273Z","host_info":{"hostname":"PrajaktaPednekar-FVFH81ZUQ05N","platform":"darwin","type":"Darwin","version":"Darwin Kernel Version 24.5.0: Tue Apr 22 19:48:46 PDT 2025; root:xnu-11417.121.6~2/RELEASE_ARM64_T8103","arch":"arm64"},"ci_info":{"build_number":null},"version_control":{"name":"git","sha":"8ad74f759f338e8428d2d543f472b35c72b80465","short_sha":"8ad74f759f","branch":"master","tag":null,"committer":"GitHub <noreply@github.com>","committer_date":"1689056734","author":"Karan Shah <64479353+karanshah-browserstack@users.noreply.github.com>","author_date":"1689056734","commit_message":"Merge pull request #126 from agarneha1331/fix-workflow","root":"/Users/prajaktapednekar/Documents/Debugging/Sel_Testng/testng-browserstack","common_git_dir":"/Users/prajaktapednekar/Documents/Debugging/Sel_Testng/testng-browserstack/.git","worktree_git_dir":"/Users/prajaktapednekar/Documents/Debugging/Sel_Testng/testng-browserstack/.git","last_tag":null,"commits_since_last_tag":null,"remotes":[{"name":"origin","url":"https://github.com/browserstack/testng-browserstack.git"}]},"project_name":"BrowserStack Sample","name":"browserstack-build-1","build_identifier":"#5","build_run_identifier":null,"description":"","tags":[],"failed_tests_rerun":false,"accessibility":{"settings":{}},"framework_details":{"frameworkName":"TestNG","frameworkVersion":"7.4.0","sdkVersion":"1.32.13","cliVersion":"1.3.12","language":"java","testFramework":{"name":"selenium","version":"4.1.4"}},"product_map":{"observability":true,"accessibility":null,"percy":false,"automate":true,"app_automate":false},"browserstackAutomation":true}
+2025-06-18T11:52:16.258Z CLI info [testhub:module]  [prajaktapednekar_LTJbMS]   [06643c52-9fe8-4557-8ed9-02944c9e875e]  startBuild: response=ljlfqjjomyy0z9q1ola0cnlqleublaojysc4xk0f
+2025-06-18T11:52:47.115Z CLI warn [observability:java:testng]  [prajaktapednekar_LTJbMS]  [ljlfqjjomyy0z9q1ola0cnlqleublaojysc4xk0f]  [06643c52-9fe8-4557-8ed9-02944c9e875e]  TestRunFinished: event={"test_hook_last_started":"BEFORE_METHOD","test_failure_type":"AssertionError","test_rerun_name":"BStackDemo-2","test_result_at":"2025-06-18T17:22:45.996218","test_scope":"Cross-Platform.com.browserstack.BStackDemoTest","test_framework_name":"TestNG","test_tags":"","cbt_session_created":true,"test_started_at":"2025-06-18T17:22:44.176540","platform_index":0,"test_failure":[{"backtrace":["java.lang.AssertionError: expected [true] but found [false]","\tat org.testng.Assert.fail(Assert.java:99)","\tat org.testng.Assert.failNotEquals(Assert.java:1037)","\tat org.testng.Assert.assertTrue(Assert.java:45)","\tat org.testng.Assert.assertTrue(Assert.java:55)","\tat com.browserstack.BStackDemoTest.addProductToCart(BStackDemoTest.java:15)","\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)","\tat java.base/java.lang.reflect.Method.invoke(Method.java:580)","\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)","\tat org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)","\tat org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)","\tat org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)","\tat org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)","\tat org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)","\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)","\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)","\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1597)","\tat org.testng.TestRunner.privateRun(TestRunner.java:794)","\tat org.testng.TestRunner.run(TestRunner.java:596)","\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:377)","\tat org.testng.SuiteRunner.access$000(SuiteRunner.java:28)","\tat org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)","\tat org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)","\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)","\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)","\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)","\tat java.base/java.lang.Thread.run(Thread.java:1570)"]}],"test_framework_version":"7.4.0","test_logs":[],"test_scopes":["Cross-Platform","com.browserstack.BStackDemoTest"],"test_code":"public void com.browserstack.BStackDemoTest.addProductToCart() throws java.lang.Exception","test_id":"BStackDemo-2@2","test_uuid":"e0557552-0b88-4a2f-babc-baf3440ef7ea","test_ended_at":"2025-06-18T17:22:45.997216","automate_session_name":"BStackDemo-22","test_hook_last_finished":"BEFORE_METHOD","test_session_name":"com.browserstack.BStackDemoTest-addProductToCart","test_hook_state":"sdk:hook:19bf2467","custom_metadata":{},"test_failure_reason":"java.lang.AssertionError: expected [true] but found [false]","test_location":"src/test/java/com/browserstack/BStackDemoTest.java","test_hooks_started":{"BEFORE_METHOD":[]},"test_file_path":"src/test/java/com/browserstack/BStackDemoTest.java","test_result":"failed","test_hooks_finished":{"BEFORE_METHOD":[{"hook_name":"setUp","hook_result":"passed","test_file_path":"testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java","event_started_at":"2025-06-18T17:22:25.278706","hook_id":"b5b15b25-3f73-43be-80b0-a3c9d94b6d66","hook_logs":[],"logs":[],"key":"BEFORE_METHOD","custom_metadata":{},"event_ended_at":"2025-06-18T17:22:44.165423","test_location":"testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java"}]},"hook_id":"b5b15b25-3f73-43be-80b0-a3c9d94b6d66","test_meta":{},"isBrowserstackAutomationSession":true,"test_name":"addProductToCart","logs":[]}
+2025-06-18T11:52:56.539Z CLI warn [observability:java:testng]  [prajaktapednekar_LTJbMS]  [ljlfqjjomyy0z9q1ola0cnlqleublaojysc4xk0f]  [06643c52-9fe8-4557-8ed9-02944c9e875e]  TestRunFinished: event={"test_hook_last_started":"BEFORE_METHOD","test_failure_type":"UnhandledError","test_rerun_name":"BStackDemo-1","test_result_at":"2025-06-18T17:22:55.578809","test_scope":"Cross-Platform.com.browserstack.BStackDemoTest","test_framework_name":"TestNG","test_tags":"","cbt_session_created":true,"test_started_at":"2025-06-18T17:22:53.636623","platform_index":0,"test_failure":[{"backtrace":["org.openqa.selenium.NoSuchElementException: For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element","Build info: version: '4.1.4', revision: '535d840ee2'","System info: host: 'PrajaktaPednekar-FVFH81ZUQ05N', ip: '2409:40c0:3026:414c:a0ab:6414:7d0:18c1%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '22.0.2'","Driver info: org.openqa.selenium.chrome.ChromeDriver","Command: [ed0fe31e692585d859de51f7c8f3910527e26f4a, findElement {using=xpath, value=//*[@id=\"1\"]/p}]","Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 15.6.1, javascriptEnabled: true, optimalHubUrl: hub-aps.browserstack.com, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 21G83, safari:platformVersion: 12.5.1, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webdriver.remote.sessionid: ed0fe31e692585d859de51f7c8f..., webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}","Session ID: ed0fe31e692585d859de51f7c8f3910527e26f4a","\tat java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)","\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)","\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)","\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)","\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)","\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)","\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)","\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)","\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)","\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)","\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)","\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)","\tat com.browserstack.BStackDemoTest.addProductToCart(BStackDemoTest.java:18)","\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)","\tat java.base/java.lang.reflect.Method.invoke(Method.java:580)","\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)","\tat org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)","\tat org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)","\tat org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)","\tat org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)","\tat org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)","\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)","\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)","\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1597)","\tat org.testng.TestRunner.privateRun(TestRunner.java:794)","\tat org.testng.TestRunner.run(TestRunner.java:596)","\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:377)","\tat org.testng.SuiteRunner.access$000(SuiteRunner.java:28)","\tat org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)","\tat org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)","\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)","\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)","\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)","\tat java.base/java.lang.Thread.run(Thread.java:1570)"]}],"test_framework_version":"7.4.0","test_logs":[],"test_scopes":["Cross-Platform","com.browserstack.BStackDemoTest"],"test_code":"public void com.browserstack.BStackDemoTest.addProductToCart() throws java.lang.Exception","test_id":"BStackDemo-1@1","test_uuid":"1a3207e2-2130-4df2-b12d-73022902fff2","test_ended_at":"2025-06-18T17:22:55.579206","automate_session_name":"BStackDemo-11","test_hook_last_finished":"BEFORE_METHOD","test_session_name":"com.browserstack.BStackDemoTest-addProductToCart","test_hook_state":"sdk:hook:20d883f0","custom_metadata":{},"test_failure_reason":"org.openqa.selenium.NoSuchElementException: For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.4', revision: '535d840ee2'\nSystem info: host: 'PrajaktaPednekar-FVFH81ZUQ05N', ip: '2409:40c0:3026:414c:a0ab:6414:7d0:18c1%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '22.0.2'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [ed0fe31e692585d859de51f7c8f3910527e26f4a, findElement {using=xpath, value=//*[@id=\"1\"]/p}]\nCapabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 15.6.1, javascriptEnabled: true, optimalHubUrl: hub-aps.browserstack.com, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 21G83, safari:platformVersion: 12.5.1, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webdriver.remote.sessionid: ed0fe31e692585d859de51f7c8f..., webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}\nSession ID: ed0fe31e692585d859de51f7c8f3910527e26f4a","test_location":"src/test/java/com/browserstack/BStackDemoTest.java","test_hooks_started":{"BEFORE_METHOD":[]},"test_file_path":"src/test/java/com/browserstack/BStackDemoTest.java","test_result":"failed","test_hooks_finished":{"BEFORE_METHOD":[{"hook_name":"setUp","hook_result":"passed","test_file_path":"testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java","event_started_at":"2025-06-18T17:22:25.278711","hook_id":"c4ebbad4-8ed1-4bfc-ad30-4808cfe6e47a","hook_logs":[],"logs":[],"key":"BEFORE_METHOD","custom_metadata":{},"event_ended_at":"2025-06-18T17:22:53.624528","test_location":"testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java"}]},"hook_id":"c4ebbad4-8ed1-4bfc-ad30-4808cfe6e47a","test_meta":{},"isBrowserstackAutomationSession":true,"test_name":"addProductToCart","logs":[]}
+2025-06-18T11:53:05.204Z CLI warn [observability:java:testng]  [prajaktapednekar_LTJbMS]  [ljlfqjjomyy0z9q1ola0cnlqleublaojysc4xk0f]  [06643c52-9fe8-4557-8ed9-02944c9e875e]  TestRunFinished: event={"test_hook_last_started":"BEFORE_METHOD","test_failure_type":null,"test_rerun_name":"BStackDemo-0","test_result_at":"2025-06-18T17:23:04.174274","test_scope":"Cross-Platform.com.browserstack.BStackDemoTest","test_framework_name":"TestNG","test_tags":"","cbt_session_created":true,"test_started_at":"2025-06-18T17:22:56.260456","platform_index":0,"test_failure":null,"test_framework_version":"7.4.0","test_logs":[],"test_scopes":["Cross-Platform","com.browserstack.BStackDemoTest"],"test_code":"public void com.browserstack.BStackDemoTest.addProductToCart() throws java.lang.Exception","test_id":"BStackDemo-0@0","test_uuid":"16b35963-9164-4364-82c9-20a70c4f339c","test_ended_at":"2025-06-18T17:23:04.174725","automate_session_name":"BStackDemo-00","test_hook_last_finished":"BEFORE_METHOD","test_session_name":"com.browserstack.BStackDemoTest-addProductToCart","test_hook_state":"sdk:hook:c3f49626","custom_metadata":{},"test_failure_reason":null,"test_location":"src/test/java/com/browserstack/BStackDemoTest.java","test_hooks_started":{"BEFORE_METHOD":[]},"test_file_path":"src/test/java/com/browserstack/BStackDemoTest.java","test_result":"passed","test_hooks_finished":{"BEFORE_METHOD":[{"hook_name":"setUp","hook_result":"passed","test_file_path":"testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java","event_started_at":"2025-06-18T17:22:25.278711","hook_id":"f7812c02-9369-4a9e-907e-798ef463eb0a","hook_logs":[],"logs":[],"key":"BEFORE_METHOD","custom_metadata":{},"event_ended_at":"2025-06-18T17:22:56.248235","test_location":"testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java"}]},"hook_id":"f7812c02-9369-4a9e-907e-798ef463eb0a","test_meta":{},"isBrowserstackAutomationSession":true,"test_name":"addProductToCart","logs":[]}
+2025-06-18T11:53:09.897Z CLI info [testhub:module]  [prajaktapednekar_LTJbMS]  [ljlfqjjomyy0z9q1ola0cnlqleublaojysc4xk0f]  [06643c52-9fe8-4557-8ed9-02944c9e875e]  stopBuild: ljlfqjjomyy0z9q1ola0cnlqleublaojysc4xk0f request={"finished_at":"2025-06-18T11:53:07.040Z","finished_metadata":[],"custom_metadata":true} response={"data":""}
+2025-06-18T11:53:09.902Z CLI info [observability:module]  [prajaktapednekar_LTJbMS]  [ljlfqjjomyy0z9q1ola0cnlqleublaojysc4xk0f]  [06643c52-9fe8-4557-8ed9-02944c9e875e]  Visit https://observability.browserstack.com/builds/ljlfqjjomyy0z9q1ola0cnlqleublaojysc4xk0f to view build report, insights, and many more debugging information all at one place!
+2025-06-18T11:53:13.828Z CLI info [main]  [prajaktapednekar_LTJbMS]  [ljlfqjjomyy0z9q1ola0cnlqleublaojysc4xk0f]  [06643c52-9fe8-4557-8ed9-02944c9e875e]  Received graceful signal termination, performing cleanup
+2025-06-18T11:55:27.429Z CLI info [main]     Server listening on port: 5400
+2025-06-18T11:55:32.678Z CLI info [main]     Received graceful signal termination, performing cleanup
+2025-06-18T11:56:02.961Z CLI info [main]     Server listening on port: 5400
+2025-06-18T11:56:06.990Z CLI info [main]     Received graceful signal termination, performing cleanup
+2025-06-18T11:56:45.293Z CLI info [main]     Server listening on port: 5400
+2025-06-18T11:56:45.614Z CLI info [testhub:module]  [prajaktapednekar_LTJbMS]   [69286f6b-6037-4aef-aae4-41f9caa50e0e]  startBuild: payload=
+
+{"started_at":"2025-06-18T11:56:45.614Z","host_info":{"hostname":"PrajaktaPednekar-FVFH81ZUQ05N","platform":"darwin","type":"Darwin","version":"Darwin Kernel Version 24.5.0: Tue Apr 22 19:48:46 PDT 2025; root:xnu-11417.121.6~2/RELEASE_ARM64_T8103","arch":"arm64"},"ci_info":{"build_number":null},"version_control":{"name":"git","sha":"8ad74f759f338e8428d2d543f472b35c72b80465","short_sha":"8ad74f759f","branch":"master","tag":null,"committer":"GitHub <noreply@github.com>","committer_date":"1689056734","author":"Karan Shah <64479353+karanshah-browserstack@users.noreply.github.com>","author_date":"1689056734","commit_message":"Merge pull request #126 from agarneha1331/fix-workflow","root":"/Users/prajaktapednekar/Documents/Debugging/Sel_Testng/testng-browserstack","common_git_dir":"/Users/prajaktapednekar/Documents/Debugging/Sel_Testng/testng-browserstack/.git","worktree_git_dir":"/Users/prajaktapednekar/Documents/Debugging/Sel_Testng/testng-browserstack/.git","last_tag":null,"commits_since_last_tag":null,"remotes":[{"name":"origin","url":"https://github.com/browserstack/testng-browserstack.git"}]},"project_name":"Automate_E2E_Flow","name":"Build_","build_identifier":"#1","build_run_identifier":null,"description":"","tags":[],"failed_tests_rerun":false,"accessibility":{"settings":{"wcagVersion":"wcag21aaa","includeIssueType":{"bestPractice":true,"needsReview":true,"experimental":true}}},"framework_details":{"frameworkName":"TestNG","frameworkVersion":"7.4.0","sdkVersion":"1.32.13","cliVersion":"1.3.12","language":"java","testFramework":{"name":"selenium","version":"4.1.4"}},"product_map":{"observability":true,"accessibility":true,"percy":false,"automate":true,"app_automate":false},"browserstackAutomation":true}
+2025-06-18T11:56:47.049Z CLI info [testhub:module]  [prajaktapednekar_LTJbMS]   [69286f6b-6037-4aef-aae4-41f9caa50e0e]  startBuild: response=vv5g8lo2bzx8nf9evpvhaslkdbbgqxqegkv1ln4d
+2025-06-18T11:56:56.915Z CLI info [accessibility:module]  [prajaktapednekar_LTJbMS]  [vv5g8lo2bzx8nf9evpvhaslkdbbgqxqegkv1ln4d]  [69286f6b-6037-4aef-aae4-41f9caa50e0e]  onDriverInit: 69286f6b-6037-4aef-aae4-41f9caa50e0e platformIndex=1
+2025-06-18T11:56:56.915Z CLI info [accessibility:module]  [prajaktapednekar_LTJbMS]  [vv5g8lo2bzx8nf9evpvhaslkdbbgqxqegkv1ln4d]  [69286f6b-6037-4aef-aae4-41f9caa50e0e]  onDriverInit: 69286f6b-6037-4aef-aae4-41f9caa50e0e platformIndex=1 isSupported=true
+2025-06-18T11:56:56.915Z CLI info [accessibility:module]  [prajaktapednekar_LTJbMS]  [vv5g8lo2bzx8nf9evpvhaslkdbbgqxqegkv1ln4d]  [69286f6b-6037-4aef-aae4-41f9caa50e0e]  onDriverInit: platformIndex=1 stored capabilities
+2025-06-18T11:56:56.916Z CLI info [accessibility:module]  [prajaktapednekar_LTJbMS]  [vv5g8lo2bzx8nf9evpvhaslkdbbgqxqegkv1ln4d]  [69286f6b-6037-4aef-aae4-41f9caa50e0e]  onDriverInit: 69286f6b-6037-4aef-aae4-41f9caa50e0e platformIndex=2
+2025-06-18T11:56:56.916Z CLI info [accessibility:module]  [prajaktapednekar_LTJbMS]  [vv5g8lo2bzx8nf9evpvhaslkdbbgqxqegkv1ln4d]  [69286f6b-6037-4aef-aae4-41f9caa50e0e]  onDriverInit: 69286f6b-6037-4aef-aae4-41f9caa50e0e platformIndex=2 isSupported=true
+2025-06-18T11:56:56.916Z CLI info [accessibility:module]  [prajaktapednekar_LTJbMS]  [vv5g8lo2bzx8nf9evpvhaslkdbbgqxqegkv1ln4d]  [69286f6b-6037-4aef-aae4-41f9caa50e0e]  onDriverInit: platformIndex=2 stored capabilities
+2025-06-18T11:56:56.917Z CLI info [accessibility:module]  [prajaktapednekar_LTJbMS]  [vv5g8lo2bzx8nf9evpvhaslkdbbgqxqegkv1ln4d]  [69286f6b-6037-4aef-aae4-41f9caa50e0e]  onDriverInit: 69286f6b-6037-4aef-aae4-41f9caa50e0e platformIndex=0
+2025-06-18T11:56:56.917Z CLI info [accessibility:module]  [prajaktapednekar_LTJbMS]  [vv5g8lo2bzx8nf9evpvhaslkdbbgqxqegkv1ln4d]  [69286f6b-6037-4aef-aae4-41f9caa50e0e]  onDriverInit: 69286f6b-6037-4aef-aae4-41f9caa50e0e platformIndex=0 isSupported=true
+2025-06-18T11:56:56.917Z CLI info [accessibility:module]  [prajaktapednekar_LTJbMS]  [vv5g8lo2bzx8nf9evpvhaslkdbbgqxqegkv1ln4d]  [69286f6b-6037-4aef-aae4-41f9caa50e0e]  onDriverInit: platformIndex=0 stored capabilities
+2025-06-18T11:56:56.947Z CLI info [accessibility:service]  [prajaktapednekar_LTJbMS]  [vv5g8lo2bzx8nf9evpvhaslkdbbgqxqegkv1ln4d]  [69286f6b-6037-4aef-aae4-41f9caa50e0e]  AccessibilityConfig: platformIndex=1 isSupported=true platform=Safari:15.6
+2025-06-18T11:56:56.948Z CLI info [accessibility:service]  [prajaktapednekar_LTJbMS]  [vv5g8lo2bzx8nf9evpvhaslkdbbgqxqegkv1ln4d]  [69286f6b-6037-4aef-aae4-41f9caa50e0e]  AccessibilityConfig: platformIndex=0 isSupported=true platform=Chrome:120
+2025-06-18T11:56:56.949Z CLI info [accessibility:service]  [prajaktapednekar_LTJbMS]  [vv5g8lo2bzx8nf9evpvhaslkdbbgqxqegkv1ln4d]  [69286f6b-6037-4aef-aae4-41f9caa50e0e]  AccessibilityConfig: platformIndex=2 isSupported=true platform=Chromium:undefined
+2025-06-18T11:57:19.307Z CLI warn [observability:java:testng]  [prajaktapednekar_LTJbMS]  [vv5g8lo2bzx8nf9evpvhaslkdbbgqxqegkv1ln4d]  [69286f6b-6037-4aef-aae4-41f9caa50e0e]  TestRunFinished: event={"test_hook_last_started":"BEFORE_METHOD","test_failure_type":null,"test_rerun_name":"BStackDemo-1","test_result_at":"2025-06-18T17:27:18.242834","test_scope":"Cross-Platform.com.browserstack.BStackDemoTest","test_framework_name":"TestNG","test_tags":"","cbt_session_created":true,"test_started_at":"2025-06-18T17:27:02.416961","platform_index":0,"test_failure":null,"test_framework_version":"7.4.0","test_logs":[],"test_scopes":["Cross-Platform","com.browserstack.BStackDemoTest"],"test_code":"public void com.browserstack.BStackDemoTest.addProductToCart() throws java.lang.Exception","test_id":"BStackDemo-1@1","test_uuid":"8dcce4d0-ba5e-4d7a-b548-4171dd3861a3","test_ended_at":"2025-06-18T17:27:18.244475","automate_session_name":"BStackDemo-11","test_hook_last_finished":"BEFORE_METHOD","test_session_name":"com.browserstack.BStackDemoTest-addProductToCart","test_hook_state":"sdk:hook:6174ce69","custom_metadata":{},"test_failure_reason":null,"test_location":"src/test/java/com/browserstack/BStackDemoTest.java","test_hooks_started":{"BEFORE_METHOD":[]},"test_file_path":"src/test/java/com/browserstack/BStackDemoTest.java","test_result":"passed","test_hooks_finished":{"BEFORE_METHOD":[{"hook_name":"setUp","hook_result":"passed","test_file_path":"testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java","event_started_at":"2025-06-18T17:26:56.531149","hook_id":"e9d1cf71-6ae8-495e-9cf3-d60e4a6201f5","hook_logs":[],"logs":[],"key":"BEFORE_METHOD","custom_metadata":{},"event_ended_at":"2025-06-18T17:27:02.405839","test_location":"testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java"}]},"hook_id":"e9d1cf71-6ae8-495e-9cf3-d60e4a6201f5","driver_init":true,"test_meta":{},"isBrowserstackAutomationSession":true,"test_name":"addProductToCart","test_init":true,"logs":[]}
+2025-06-18T11:57:22.415Z CLI warn [observability:java:testng]  [prajaktapednekar_LTJbMS]  [vv5g8lo2bzx8nf9evpvhaslkdbbgqxqegkv1ln4d]  [69286f6b-6037-4aef-aae4-41f9caa50e0e]  TestRunFinished: event={"test_hook_last_started":"BEFORE_METHOD","test_failure_type":null,"test_rerun_name":"BStackDemo-0","test_result_at":"2025-06-18T17:27:21.407524","test_scope":"Cross-Platform.com.browserstack.BStackDemoTest","test_framework_name":"TestNG","test_tags":"","cbt_session_created":true,"test_started_at":"2025-06-18T17:27:08.057","platform_index":0,"test_failure":null,"test_framework_version":"7.4.0","test_logs":[],"test_scopes":["Cross-Platform","com.browserstack.BStackDemoTest"],"test_code":"public void com.browserstack.BStackDemoTest.addProductToCart() throws java.lang.Exception","test_id":"BStackDemo-0@0","test_uuid":"81614d2b-cae7-4bf6-ac0a-551d96e1f64f","test_ended_at":"2025-06-18T17:27:21.407810","automate_session_name":"BStackDemo-00","test_hook_last_finished":"BEFORE_METHOD","test_session_name":"com.browserstack.BStackDemoTest-addProductToCart","test_hook_state":"sdk:hook:3ba54b15","custom_metadata":{},"test_failure_reason":null,"test_location":"src/test/java/com/browserstack/BStackDemoTest.java","test_hooks_started":{"BEFORE_METHOD":[]},"test_file_path":"src/test/java/com/browserstack/BStackDemoTest.java","test_result":"passed","test_hooks_finished":{"BEFORE_METHOD":[{"hook_name":"setUp","hook_result":"passed","test_file_path":"testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java","event_started_at":"2025-06-18T17:26:56.531152","hook_id":"30916c57-6aa6-4cd6-9649-521871731df8","hook_logs":[],"logs":[],"key":"BEFORE_METHOD","custom_metadata":{},"event_ended_at":"2025-06-18T17:27:08.046175","test_location":"testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java"}]},"hook_id":"30916c57-6aa6-4cd6-9649-521871731df8","driver_init":true,"test_meta":{},"isBrowserstackAutomationSession":true,"test_name":"addProductToCart","test_init":true,"logs":[]}
+2025-06-18T11:57:55.502Z CLI warn [observability:java:testng]  [prajaktapednekar_LTJbMS]  [vv5g8lo2bzx8nf9evpvhaslkdbbgqxqegkv1ln4d]  [69286f6b-6037-4aef-aae4-41f9caa50e0e]  TestRunFinished: event={"test_hook_last_started":"BEFORE_METHOD","test_failure_type":null,"test_rerun_name":"BStackDemo-2","test_result_at":"2025-06-18T17:27:54.462335","test_scope":"Cross-Platform.com.browserstack.BStackDemoTest","test_framework_name":"TestNG","test_tags":"","cbt_session_created":true,"test_started_at":"2025-06-18T17:27:38.773140","platform_index":0,"test_failure":null,"test_framework_version":"7.4.0","test_logs":[],"test_scopes":["Cross-Platform","com.browserstack.BStackDemoTest"],"test_code":"public void com.browserstack.BStackDemoTest.addProductToCart() throws java.lang.Exception","test_id":"BStackDemo-2@2","test_uuid":"6b1cd4f7-7778-417a-a5e3-392deaa48d5c","test_ended_at":"2025-06-18T17:27:54.462926","automate_session_name":"BStackDemo-22","test_hook_last_finished":"BEFORE_METHOD","test_session_name":"com.browserstack.BStackDemoTest-addProductToCart","test_hook_state":"sdk:hook:97e8d41a","custom_metadata":{},"test_failure_reason":null,"test_location":"src/test/java/com/browserstack/BStackDemoTest.java","test_hooks_started":{"BEFORE_METHOD":[]},"test_file_path":"src/test/java/com/browserstack/BStackDemoTest.java","test_result":"passed","test_hooks_finished":{"BEFORE_METHOD":[{"hook_name":"setUp","hook_result":"passed","test_file_path":"testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java","event_started_at":"2025-06-18T17:26:56.531152","hook_id":"55c21897-643b-4faf-a851-e1b869507cd9","hook_logs":[],"logs":[],"key":"BEFORE_METHOD","custom_metadata":{},"event_ended_at":"2025-06-18T17:27:38.761528","test_location":"testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java"}]},"hook_id":"55c21897-643b-4faf-a851-e1b869507cd9","driver_init":true,"test_meta":{},"isBrowserstackAutomationSession":true,"test_name":"addProductToCart","test_init":true,"logs":[]}
+2025-06-18T11:57:58.590Z CLI info [testhub:module]  [prajaktapednekar_LTJbMS]  [vv5g8lo2bzx8nf9evpvhaslkdbbgqxqegkv1ln4d]  [69286f6b-6037-4aef-aae4-41f9caa50e0e]  stopBuild: vv5g8lo2bzx8nf9evpvhaslkdbbgqxqegkv1ln4d request={"finished_at":"2025-06-18T11:57:57.390Z","finished_metadata":[],"custom_metadata":true} response={"data":""}
+2025-06-18T11:57:58.591Z CLI info [observability:module]  [prajaktapednekar_LTJbMS]  [vv5g8lo2bzx8nf9evpvhaslkdbbgqxqegkv1ln4d]  [69286f6b-6037-4aef-aae4-41f9caa50e0e]  Visit https://observability.browserstack.com/builds/vv5g8lo2bzx8nf9evpvhaslkdbbgqxqegkv1ln4d to view build report, insights, and many more debugging information all at one place!
+2025-06-18T11:58:03.193Z CLI info [main]  [prajaktapednekar_LTJbMS]  [vv5g8lo2bzx8nf9evpvhaslkdbbgqxqegkv1ln4d]  [69286f6b-6037-4aef-aae4-41f9caa50e0e]  Received graceful signal termination, performing cleanup
+2025-06-18T12:06:16.133Z CLI info [main]     Server listening on port: 5400
+2025-06-18T12:06:16.437Z CLI info [testhub:module]  [prajaktapednekar_LTJbMS]   [84cddd33-62e1-4d05-bf57-f96a3c711e05]  Starting testhub from 37024:0
+2025-06-18T12:06:16.438Z CLI info [testhub:module]  [prajaktapednekar_LTJbMS]   [84cddd33-62e1-4d05-bf57-f96a3c711e05]  startBuild: payload=
+
+{"started_at":"2025-06-18T12:06:16.438Z","host_info":{"hostname":"PrajaktaPednekar-FVFH81ZUQ05N","platform":"darwin","type":"Darwin","version":"Darwin Kernel Version 24.5.0: Tue Apr 22 19:48:46 PDT 2025; root:xnu-11417.121.6~2/RELEASE_ARM64_T8103","arch":"arm64"},"ci_info":{"build_number":null},"version_control":{"name":"git","sha":"8ad74f759f338e8428d2d543f472b35c72b80465","short_sha":"8ad74f759f","branch":"master","tag":null,"committer":"GitHub <noreply@github.com>","committer_date":"1689056734","author":"Karan Shah <64479353+karanshah-browserstack@users.noreply.github.com>","author_date":"1689056734","commit_message":"Merge pull request #126 from agarneha1331/fix-workflow","root":"/Users/prajaktapednekar/Documents/Debugging/Sel_Testng/testng-browserstack","common_git_dir":"/Users/prajaktapednekar/Documents/Debugging/Sel_Testng/testng-browserstack/.git","worktree_git_dir":"/Users/prajaktapednekar/Documents/Debugging/Sel_Testng/testng-browserstack/.git","last_tag":null,"commits_since_last_tag":null,"remotes":[{"name":"origin","url":"https://github.com/browserstack/testng-browserstack.git"}]},"project_name":"Demo-A11y","name":"WebApp-Accessibility","build_identifier":"#1","build_run_identifier":null,"description":"","tags":[],"failed_tests_rerun":false,"accessibility":{"settings":{"wcagVersion":"wcag21aa","includeIssueType":{"bestPractice":true,"needsReview":true,"experimental":true}}},"framework_details":{"frameworkName":"TestNG","frameworkVersion":"7.4.0","sdkVersion":"1.32.13","cliVersion":"1.4.0","language":"java","testFramework":{"name":"selenium","version":"4.1.4"},"source":"testng:archetype-integrate:v1.2"},"product_map":{"observability":true,"accessibility":true,"percy":false,"automate":true,"app_automate":false},"browserstackAutomation":true}
+2025-06-18T12:06:27.417Z CLI info [testhub:request-queue-handler]  [prajaktapednekar_LTJbMS]  [nty42bzlorolnexy78wuyjz7joot68d3upw7fkig]  [84cddd33-62e1-4d05-bf57-f96a3c711e05]  Added the event {
+  event_type: 'HookRunStarted',
+  hook_run: {
+    type: 'hook',
+    hook_type: 'BEFORE_METHOD',
+    framework: 'TestNG',
+    uuid: '3e6986a4-32c2-421c-8110-e929c7b64023',
+    name: 'setUp',
+    result: 'pending',
+    test_run_id: 'c6af04f2-db5a-4edc-95ee-e6eea75be844',
+    body: { lang: 'java', code: null },
+    scope: 'Cross-Platform.com.browserstack.BStackDemoTest',
+    custom_metadata: {},
+    tags: [],
+    scopes: [ 'Cross-Platform', 'com.browserstack.BStackDemoTest' ],
+    file_name: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+    vc_filepath: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+    location: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+    started_at: '2025-06-18T12:06:27.408Z'
+  },
+  logs: []
+} to 37024:0
+2025-06-18T12:06:27.529Z CLI info [testhub:request-queue-handler]  [prajaktapednekar_LTJbMS]  [nty42bzlorolnexy78wuyjz7joot68d3upw7fkig]  [84cddd33-62e1-4d05-bf57-f96a3c711e05]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'TestNG',
+      testFrameworkVersion: '7.4.0',
+      testFrameworkState: 'LOG',
+      timestamp: '2025-06-18T12:06:27.523Z',
+      uuid: '3e6986a4-32c2-421c-8110-e929c7b64023',
+      kind: 'TEST_LOG',
+      message: '"SLF4J: Failed to load class \\"org.slf4j.impl.StaticLoggerBinder\\"."',
+      level: 'ERROR',
+      test_run_uuid: '3e6986a4-32c2-421c-8110-e929c7b64023'
+    }
+  ]
+} to 37024:0
+2025-06-18T12:06:27.537Z CLI info [testhub:request-queue-handler]  [prajaktapednekar_LTJbMS]  [nty42bzlorolnexy78wuyjz7joot68d3upw7fkig]  [84cddd33-62e1-4d05-bf57-f96a3c711e05]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'TestNG',
+      testFrameworkVersion: '7.4.0',
+      testFrameworkState: 'LOG',
+      timestamp: '2025-06-18T12:06:27.534Z',
+      uuid: '3e6986a4-32c2-421c-8110-e929c7b64023',
+      kind: 'TEST_LOG',
+      message: '"SLF4J: Defaulting to no-operation (NOP) logger implementation"',
+      level: 'ERROR',
+      test_run_uuid: '3e6986a4-32c2-421c-8110-e929c7b64023'
+    }
+  ]
+} to 37024:0
+2025-06-18T12:06:27.543Z CLI info [testhub:request-queue-handler]  [prajaktapednekar_LTJbMS]  [nty42bzlorolnexy78wuyjz7joot68d3upw7fkig]  [84cddd33-62e1-4d05-bf57-f96a3c711e05]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'TestNG',
+      testFrameworkVersion: '7.4.0',
+      testFrameworkState: 'LOG',
+      timestamp: '2025-06-18T12:06:27.542Z',
+      uuid: '3e6986a4-32c2-421c-8110-e929c7b64023',
+      kind: 'TEST_LOG',
+      message: '"SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details."',
+      level: 'ERROR',
+      test_run_uuid: '3e6986a4-32c2-421c-8110-e929c7b64023'
+    }
+  ]
+} to 37024:0
+2025-06-18T12:06:27.578Z CLI info [testhub:request-queue-handler]  [prajaktapednekar_LTJbMS]  [nty42bzlorolnexy78wuyjz7joot68d3upw7fkig]  [84cddd33-62e1-4d05-bf57-f96a3c711e05]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'TestNG',
+      testFrameworkVersion: '7.4.0',
+      testFrameworkState: 'LOG',
+      timestamp: '2025-06-18T12:06:27.577Z',
+      uuid: '3e6986a4-32c2-421c-8110-e929c7b64023',
+      kind: 'TEST_LOG',
+      message: '"WARNING: sun.reflect.Reflection.getCallerClass is not supported. This will impact performance."',
+      level: 'INFO',
+      test_run_uuid: '3e6986a4-32c2-421c-8110-e929c7b64023'
+    }
+  ]
+} to 37024:0
+2025-06-18T12:06:27.760Z CLI info [accessibility:module]  [prajaktapednekar_LTJbMS]  [nty42bzlorolnexy78wuyjz7joot68d3upw7fkig]  [84cddd33-62e1-4d05-bf57-f96a3c711e05]  onDriverInit: 84cddd33-62e1-4d05-bf57-f96a3c711e05 platformIndex=0
+2025-06-18T12:06:27.760Z CLI info [accessibility:module]  [prajaktapednekar_LTJbMS]  [nty42bzlorolnexy78wuyjz7joot68d3upw7fkig]  [84cddd33-62e1-4d05-bf57-f96a3c711e05]  onDriverInit: 84cddd33-62e1-4d05-bf57-f96a3c711e05 platformIndex=0 isSupported=true
+2025-06-18T12:06:27.761Z CLI info [accessibility:module]  [prajaktapednekar_LTJbMS]  [nty42bzlorolnexy78wuyjz7joot68d3upw7fkig]  [84cddd33-62e1-4d05-bf57-f96a3c711e05]  onDriverInit: platformIndex=0 stored capabilities
+2025-06-18T12:06:27.791Z CLI info [accessibility:service]  [prajaktapednekar_LTJbMS]  [nty42bzlorolnexy78wuyjz7joot68d3upw7fkig]  [84cddd33-62e1-4d05-bf57-f96a3c711e05]  AccessibilityConfig: platformIndex=0 isSupported=true platform=undefined:latest
+2025-06-18T12:06:27.872Z CLI info [testhub:request-queue-handler]  [prajaktapednekar_LTJbMS]  [nty42bzlorolnexy78wuyjz7joot68d3upw7fkig]  [84cddd33-62e1-4d05-bf57-f96a3c711e05]  Processing batch event [
+  {
+    event_type: 'HookRunStarted',
+    hook_run: {
+      type: 'hook',
+      hook_type: 'BEFORE_METHOD',
+      framework: 'TestNG',
+      uuid: '3e6986a4-32c2-421c-8110-e929c7b64023',
+      name: 'setUp',
+      result: 'pending',
+      test_run_id: 'c6af04f2-db5a-4edc-95ee-e6eea75be844',
+      body: [Object],
+      scope: 'Cross-Platform.com.browserstack.BStackDemoTest',
+      custom_metadata: {},
+      tags: [],
+      scopes: [Array],
+      file_name: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+      vc_filepath: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+      location: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+      started_at: '2025-06-18T12:06:27.408Z'
+    },
+    logs: []
+  },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] }
+] to 37024:0
+2025-06-18T12:06:30.536Z CLI info [testhub:request-queue-handler]  [prajaktapednekar_LTJbMS]  [nty42bzlorolnexy78wuyjz7joot68d3upw7fkig]  [84cddd33-62e1-4d05-bf57-f96a3c711e05]  Added the event {
+  event_type: 'HookRunFinished',
+  hook_run: {
+    type: 'hook',
+    hook_type: 'BEFORE_METHOD',
+    framework: 'TestNG',
+    uuid: '3e6986a4-32c2-421c-8110-e929c7b64023',
+    name: 'setUp',
+    result: 'failed',
+    test_run_id: 'c6af04f2-db5a-4edc-95ee-e6eea75be844',
+    body: { lang: 'java', code: null },
+    scope: 'Cross-Platform.com.browserstack.BStackDemoTest',
+    custom_metadata: {},
+    tags: [],
+    scopes: [ 'Cross-Platform', 'com.browserstack.BStackDemoTest' ],
+    file_name: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+    vc_filepath: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+    location: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+    started_at: '2025-06-18T12:06:27.408Z',
+    finished_at: '2025-06-18T12:06:30.533Z'
+  },
+  logs: []
+} to 37024:0
+2025-06-18T12:06:30.549Z CLI info [testhub:request-queue-handler]  [prajaktapednekar_LTJbMS]  [nty42bzlorolnexy78wuyjz7joot68d3upw7fkig]  [84cddd33-62e1-4d05-bf57-f96a3c711e05]  Added the event {
+  event_type: 'TestRunStarted',
+  test_run: {
+    type: 'test',
+    framework: 'TestNG',
+    uuid: 'c6af04f2-db5a-4edc-95ee-e6eea75be844',
+    name: 'addProductToCart',
+    body: {
+      lang: 'java',
+      code: 'public void com.browserstack.BStackDemoTest.addProductToCart() throws java.lang.Exception'
+    },
+    identifier: 'addProductToCart',
+    scope: 'Cross-Platform.com.browserstack.BStackDemoTest',
+    scopes: [ 'Cross-Platform', 'com.browserstack.BStackDemoTest' ],
+    file_name: 'src/test/java/com/browserstack/BStackDemoTest.java',
+    vc_filepath: 'src/test/java/com/browserstack/BStackDemoTest.java',
+    location: 'src/test/java/com/browserstack/BStackDemoTest.java',
+    meta: {},
+    result: 'pending',
+    duration_in_ms: null,
+    started_at: '2025-06-18T12:06:30.547Z',
+    failure: undefined,
+    failure_type: undefined,
+    failure_reason: undefined,
+    retry_of: null,
+    custom_metadata: {},
+    tags: [],
+    customRerunParam: { rerun_name: 'BStackDemo-0' },
+    hooks: [],
+    product_map: {
+      observability: true,
+      accessibility: true,
+      percy: false,
+      automate: true,
+      app_automate: false
+    }
+  },
+  logs: []
+} to 37024:0
+2025-06-18T12:06:31.379Z CLI warn [observability:java:testng]  [prajaktapednekar_LTJbMS]  [nty42bzlorolnexy78wuyjz7joot68d3upw7fkig]  [84cddd33-62e1-4d05-bf57-f96a3c711e05]  TestRunFinished: event={"test_hook_last_started":"BEFORE_METHOD","test_failure_type":"UnhandledError","test_rerun_name":"BStackDemo-0","test_result_at":"2025-06-18T17:36:30.552855","test_scope":"Cross-Platform.com.browserstack.BStackDemoTest","test_framework_name":"TestNG","test_tags":"","test_started_at":"2025-06-18T17:36:30.547292","platform_index":0,"test_failure":[{"backtrace":["org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.","\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:585)","\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:248)","\tat org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:164)","\tat org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:108)","\tat org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:106)","\tat org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:93)","\tat org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:82)","\tat com.browserstack.SeleniumTest.setUp(SeleniumTest.java:17)","\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)","\tat java.base/java.lang.reflect.Method.invoke(Method.java:580)","\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)","\tat org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)","\tat org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)","\tat org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)","\tat org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)","\tat org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)","\tat org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)","\tat org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)","\tat org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)","\tat org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)","\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)","\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)","\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1597)","\tat org.testng.TestRunner.privateRun(TestRunner.java:794)","\tat org.testng.TestRunner.run(TestRunner.java:596)","\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:377)","\tat org.testng.SuiteRunner.access$000(SuiteRunner.java:28)","\tat org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)","\tat org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)","\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)","\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)","\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)","\tat java.base/java.lang.Thread.run(Thread.java:1570)","Caused by: org.openqa.selenium.WebDriverException: The property '#/firstMatch/0/bstack:options' contains additional properties [\"browserStackAutomation\"] outside of the schema when none are allowed in the payload.","Build info: version: '4.1.4', revision: '535d840ee2'","System info: host: 'PrajaktaPednekar-FVFH81ZUQ05N', ip: '2409:40c0:3026:414c:a0ab:6414:7d0:18c1%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '22.0.2'","Driver info: driver.version: ChromeDriver","remote stacktrace: ","\tat java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)","\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)","\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)","\tat org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:59)","\tat org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)","\tat org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$1(ProtocolHandshake.java:133)","\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:212)","\tat java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1034)","\tat java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:144)","\tat java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:574)","\tat java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:560)","\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:546)","\tat java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)","\tat java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)","\tat java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:662)","\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:135)","\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)","\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)","\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)","\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)","\t... 32 more"]}],"test_framework_version":"7.4.0","test_logs":[],"test_scopes":["Cross-Platform","com.browserstack.BStackDemoTest"],"test_code":"public void com.browserstack.BStackDemoTest.addProductToCart() throws java.lang.Exception","test_id":"BStackDemo-0@0","test_uuid":"c6af04f2-db5a-4edc-95ee-e6eea75be844","test_ended_at":"2025-06-18T17:36:30.553473","automate_session_name":"BStackDemo-00","test_hook_last_finished":"BEFORE_METHOD","test_session_name":"com.browserstack.BStackDemoTest-addProductToCart","test_hook_state":"sdk:hook:e7de6d72","custom_metadata":{},"test_failure_reason":"org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.","test_location":"src/test/java/com/browserstack/BStackDemoTest.java","test_hooks_started":{"BEFORE_METHOD":[]},"test_file_path":"src/test/java/com/browserstack/BStackDemoTest.java","test_result":"skipped","test_hooks_finished":{"BEFORE_METHOD":[{"hook_name":"setUp","hook_result":"failed","test_file_path":"testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java","event_started_at":"2025-06-18T17:36:27.408528","hook_id":"3e6986a4-32c2-421c-8110-e929c7b64023","hook_logs":[],"logs":[],"key":"BEFORE_METHOD","custom_metadata":{},"event_ended_at":"2025-06-18T17:36:30.533235","test_location":"testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java"}]},"hook_id":"3e6986a4-32c2-421c-8110-e929c7b64023","test_meta":{},"isBrowserstackAutomationSession":true,"test_name":"addProductToCart","test_init":true,"logs":[]}
+2025-06-18T12:06:31.380Z CLI info [testhub:request-queue-handler]  [prajaktapednekar_LTJbMS]  [nty42bzlorolnexy78wuyjz7joot68d3upw7fkig]  [84cddd33-62e1-4d05-bf57-f96a3c711e05]  Added the event {
+  event_type: 'TestRunFinished',
+  test_run: {
+    type: 'test',
+    framework: 'TestNG',
+    uuid: 'c6af04f2-db5a-4edc-95ee-e6eea75be844',
+    name: 'addProductToCart',
+    body: {
+      lang: 'java',
+      code: 'public void com.browserstack.BStackDemoTest.addProductToCart() throws java.lang.Exception'
+    },
+    identifier: 'addProductToCart',
+    scope: 'Cross-Platform.com.browserstack.BStackDemoTest',
+    scopes: [ 'Cross-Platform', 'com.browserstack.BStackDemoTest' ],
+    file_name: 'src/test/java/com/browserstack/BStackDemoTest.java',
+    vc_filepath: 'src/test/java/com/browserstack/BStackDemoTest.java',
+    location: 'src/test/java/com/browserstack/BStackDemoTest.java',
+    meta: {},
+    result: 'skipped',
+    duration_in_ms: 6,
+    started_at: '2025-06-18T12:06:30.547Z',
+    finished_at: '2025-06-18T12:06:30.553Z',
+    failure: [ [Object] ],
+    failure_type: 'UnhandledError',
+    failure_reason: 'org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.',
+    retry_of: null,
+    custom_metadata: {},
+    tags: [],
+    customRerunParam: { rerun_name: 'BStackDemo-0' },
+    hooks: [ '3e6986a4-32c2-421c-8110-e929c7b64023' ],
+    product_map: {
+      observability: true,
+      accessibility: true,
+      percy: false,
+      automate: true,
+      app_automate: false
+    }
+  },
+  logs: []
+} to 37024:0
+2025-06-18T12:06:31.391Z CLI info [testhub:request-queue-handler]  [prajaktapednekar_LTJbMS]  [nty42bzlorolnexy78wuyjz7joot68d3upw7fkig]  [84cddd33-62e1-4d05-bf57-f96a3c711e05]  Added the event {
+  event_type: 'HookRunStarted',
+  hook_run: {
+    type: 'hook',
+    hook_type: 'AFTER_METHOD',
+    framework: 'TestNG',
+    uuid: '2ae707f1-3816-4771-99ab-7c1014d121a2',
+    name: 'tearDown',
+    result: 'pending',
+    test_run_id: 'c6af04f2-db5a-4edc-95ee-e6eea75be844',
+    body: { lang: 'java', code: null },
+    scope: 'Cross-Platform.com.browserstack.BStackDemoTest',
+    custom_metadata: {},
+    tags: [],
+    scopes: [ 'Cross-Platform', 'com.browserstack.BStackDemoTest' ],
+    file_name: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+    vc_filepath: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+    location: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+    started_at: '2025-06-18T12:06:31.389Z'
+  },
+  logs: []
+} to 37024:0
+2025-06-18T12:06:31.401Z CLI info [testhub:request-queue-handler]  [prajaktapednekar_LTJbMS]  [nty42bzlorolnexy78wuyjz7joot68d3upw7fkig]  [84cddd33-62e1-4d05-bf57-f96a3c711e05]  Added the event {
+  event_type: 'HookRunFinished',
+  hook_run: {
+    type: 'hook',
+    hook_type: 'AFTER_METHOD',
+    framework: 'TestNG',
+    uuid: '2ae707f1-3816-4771-99ab-7c1014d121a2',
+    name: 'tearDown',
+    result: 'failed',
+    test_run_id: 'c6af04f2-db5a-4edc-95ee-e6eea75be844',
+    body: { lang: 'java', code: null },
+    scope: 'Cross-Platform.com.browserstack.BStackDemoTest',
+    custom_metadata: {},
+    tags: [],
+    scopes: [ 'Cross-Platform', 'com.browserstack.BStackDemoTest' ],
+    file_name: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+    vc_filepath: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+    location: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+    started_at: '2025-06-18T12:06:31.389Z',
+    finished_at: '2025-06-18T12:06:31.399Z'
+  },
+  logs: []
+} to 37024:0
+2025-06-18T12:06:31.874Z CLI info [testhub:request-queue-handler]  [prajaktapednekar_LTJbMS]  [nty42bzlorolnexy78wuyjz7joot68d3upw7fkig]  [84cddd33-62e1-4d05-bf57-f96a3c711e05]  Processing batch event [
+  {
+    event_type: 'HookRunFinished',
+    hook_run: {
+      type: 'hook',
+      hook_type: 'BEFORE_METHOD',
+      framework: 'TestNG',
+      uuid: '3e6986a4-32c2-421c-8110-e929c7b64023',
+      name: 'setUp',
+      result: 'failed',
+      test_run_id: 'c6af04f2-db5a-4edc-95ee-e6eea75be844',
+      body: [Object],
+      scope: 'Cross-Platform.com.browserstack.BStackDemoTest',
+      custom_metadata: {},
+      tags: [],
+      scopes: [Array],
+      file_name: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+      vc_filepath: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+      location: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+      started_at: '2025-06-18T12:06:27.408Z',
+      finished_at: '2025-06-18T12:06:30.533Z'
+    },
+    logs: []
+  },
+  {
+    event_type: 'TestRunStarted',
+    test_run: {
+      type: 'test',
+      framework: 'TestNG',
+      uuid: 'c6af04f2-db5a-4edc-95ee-e6eea75be844',
+      name: 'addProductToCart',
+      body: [Object],
+      identifier: 'addProductToCart',
+      scope: 'Cross-Platform.com.browserstack.BStackDemoTest',
+      scopes: [Array],
+      file_name: 'src/test/java/com/browserstack/BStackDemoTest.java',
+      vc_filepath: 'src/test/java/com/browserstack/BStackDemoTest.java',
+      location: 'src/test/java/com/browserstack/BStackDemoTest.java',
+      meta: {},
+      result: 'pending',
+      duration_in_ms: null,
+      started_at: '2025-06-18T12:06:30.547Z',
+      failure: undefined,
+      failure_type: undefined,
+      failure_reason: undefined,
+      retry_of: null,
+      custom_metadata: {},
+      tags: [],
+      customRerunParam: [Object],
+      hooks: [],
+      product_map: [Object]
+    },
+    logs: []
+  },
+  {
+    event_type: 'TestRunFinished',
+    test_run: {
+      type: 'test',
+      framework: 'TestNG',
+      uuid: 'c6af04f2-db5a-4edc-95ee-e6eea75be844',
+      name: 'addProductToCart',
+      body: [Object],
+      identifier: 'addProductToCart',
+      scope: 'Cross-Platform.com.browserstack.BStackDemoTest',
+      scopes: [Array],
+      file_name: 'src/test/java/com/browserstack/BStackDemoTest.java',
+      vc_filepath: 'src/test/java/com/browserstack/BStackDemoTest.java',
+      location: 'src/test/java/com/browserstack/BStackDemoTest.java',
+      meta: {},
+      result: 'skipped',
+      duration_in_ms: 6,
+      started_at: '2025-06-18T12:06:30.547Z',
+      finished_at: '2025-06-18T12:06:30.553Z',
+      failure: [Array],
+      failure_type: 'UnhandledError',
+      failure_reason: 'org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.',
+      retry_of: null,
+      custom_metadata: {},
+      tags: [],
+      customRerunParam: [Object],
+      hooks: [Array],
+      product_map: [Object]
+    },
+    logs: []
+  },
+  {
+    event_type: 'HookRunStarted',
+    hook_run: {
+      type: 'hook',
+      hook_type: 'AFTER_METHOD',
+      framework: 'TestNG',
+      uuid: '2ae707f1-3816-4771-99ab-7c1014d121a2',
+      name: 'tearDown',
+      result: 'pending',
+      test_run_id: 'c6af04f2-db5a-4edc-95ee-e6eea75be844',
+      body: [Object],
+      scope: 'Cross-Platform.com.browserstack.BStackDemoTest',
+      custom_metadata: {},
+      tags: [],
+      scopes: [Array],
+      file_name: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+      vc_filepath: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+      location: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+      started_at: '2025-06-18T12:06:31.389Z'
+    },
+    logs: []
+  },
+  {
+    event_type: 'HookRunFinished',
+    hook_run: {
+      type: 'hook',
+      hook_type: 'AFTER_METHOD',
+      framework: 'TestNG',
+      uuid: '2ae707f1-3816-4771-99ab-7c1014d121a2',
+      name: 'tearDown',
+      result: 'failed',
+      test_run_id: 'c6af04f2-db5a-4edc-95ee-e6eea75be844',
+      body: [Object],
+      scope: 'Cross-Platform.com.browserstack.BStackDemoTest',
+      custom_metadata: {},
+      tags: [],
+      scopes: [Array],
+      file_name: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+      vc_filepath: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+      location: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+      started_at: '2025-06-18T12:06:31.389Z',
+      finished_at: '2025-06-18T12:06:31.399Z'
+    },
+    logs: []
+  }
+] to 37024:0
+2025-06-18T12:06:33.322Z CLI info [testhub:module]  [prajaktapednekar_LTJbMS]  [nty42bzlorolnexy78wuyjz7joot68d3upw7fkig]  [84cddd33-62e1-4d05-bf57-f96a3c711e05]  stopBuild: nty42bzlorolnexy78wuyjz7joot68d3upw7fkig request={"finished_at":"2025-06-18T12:06:32.405Z","finished_metadata":[],"custom_metadata":true} response={"data":""}
+2025-06-18T12:06:33.325Z CLI info [observability:module]  [prajaktapednekar_LTJbMS]  [nty42bzlorolnexy78wuyjz7joot68d3upw7fkig]  [84cddd33-62e1-4d05-bf57-f96a3c711e05]  Visit https://observability.browserstack.com/builds/nty42bzlorolnexy78wuyjz7joot68d3upw7fkig to view build report, insights, and many more debugging information all at one place!
+2025-06-18T12:06:37.254Z CLI info [main]  [prajaktapednekar_LTJbMS]  [nty42bzlorolnexy78wuyjz7joot68d3upw7fkig]  [84cddd33-62e1-4d05-bf57-f96a3c711e05]  Received graceful signal termination, performing cleanup
+2025-06-18T12:08:18.083Z CLI info [main]     Server listening on port: 5400
+2025-06-18T12:08:18.389Z CLI info [testhub:module]  [prajaktapednekar_LTJbMS]   [af7e62bd-dff9-4fce-b824-e4404cb21f94]  Starting testhub from 38057:0
+2025-06-18T12:08:18.390Z CLI info [testhub:module]  [prajaktapednekar_LTJbMS]   [af7e62bd-dff9-4fce-b824-e4404cb21f94]  startBuild: payload=
+
+{"started_at":"2025-06-18T12:08:18.390Z","host_info":{"hostname":"PrajaktaPednekar-FVFH81ZUQ05N","platform":"darwin","type":"Darwin","version":"Darwin Kernel Version 24.5.0: Tue Apr 22 19:48:46 PDT 2025; root:xnu-11417.121.6~2/RELEASE_ARM64_T8103","arch":"arm64"},"ci_info":{"build_number":null},"version_control":{"name":"git","sha":"8ad74f759f338e8428d2d543f472b35c72b80465","short_sha":"8ad74f759f","branch":"master","tag":null,"committer":"GitHub <noreply@github.com>","committer_date":"1689056734","author":"Karan Shah <64479353+karanshah-browserstack@users.noreply.github.com>","author_date":"1689056734","commit_message":"Merge pull request #126 from agarneha1331/fix-workflow","root":"/Users/prajaktapednekar/Documents/Debugging/Sel_Testng/testng-browserstack","common_git_dir":"/Users/prajaktapednekar/Documents/Debugging/Sel_Testng/testng-browserstack/.git","worktree_git_dir":"/Users/prajaktapednekar/Documents/Debugging/Sel_Testng/testng-browserstack/.git","last_tag":null,"commits_since_last_tag":null,"remotes":[{"name":"origin","url":"https://github.com/browserstack/testng-browserstack.git"}]},"project_name":"Demo-A11y","name":"WebApp-Accessibility","build_identifier":"#2","build_run_identifier":null,"description":"","tags":[],"failed_tests_rerun":false,"accessibility":{"settings":{"wcagVersion":"wcag21aa","includeIssueType":{"bestPractice":true,"needsReview":true,"experimental":true}}},"framework_details":{"frameworkName":"TestNG","frameworkVersion":"7.4.0","sdkVersion":"1.32.13","cliVersion":"1.4.0","language":"java","testFramework":{"name":"selenium","version":"4.1.4"},"source":"testng:archetype-integrate:v1.2"},"product_map":{"observability":true,"accessibility":true,"percy":false,"automate":true,"app_automate":false},"browserstackAutomation":true}
+2025-06-18T12:08:29.947Z CLI info [testhub:request-queue-handler]  [prajaktapednekar_LTJbMS]  [ghxuh5tor03ql5d1jshvmwxir55htcmxissgukmp]  [af7e62bd-dff9-4fce-b824-e4404cb21f94]  Added the event {
+  event_type: 'HookRunStarted',
+  hook_run: {
+    type: 'hook',
+    hook_type: 'BEFORE_METHOD',
+    framework: 'TestNG',
+    uuid: 'ef72c047-dbc6-4a02-8ec1-19ac0a670735',
+    name: 'setUp',
+    result: 'pending',
+    test_run_id: '0151e08c-47b4-4bb1-9d30-34838debdc55',
+    body: { lang: 'java', code: null },
+    scope: 'Cross-Platform.com.browserstack.BStackDemoTest',
+    custom_metadata: {},
+    tags: [],
+    scopes: [ 'Cross-Platform', 'com.browserstack.BStackDemoTest' ],
+    file_name: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+    vc_filepath: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+    location: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+    started_at: '2025-06-18T12:08:29.938Z'
+  },
+  logs: []
+} to 38057:0
+2025-06-18T12:08:30.062Z CLI info [testhub:request-queue-handler]  [prajaktapednekar_LTJbMS]  [ghxuh5tor03ql5d1jshvmwxir55htcmxissgukmp]  [af7e62bd-dff9-4fce-b824-e4404cb21f94]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'TestNG',
+      testFrameworkVersion: '7.4.0',
+      testFrameworkState: 'LOG',
+      timestamp: '2025-06-18T12:08:30.054Z',
+      uuid: 'ef72c047-dbc6-4a02-8ec1-19ac0a670735',
+      kind: 'TEST_LOG',
+      message: '"SLF4J: Failed to load class \\"org.slf4j.impl.StaticLoggerBinder\\"."',
+      level: 'ERROR',
+      test_run_uuid: 'ef72c047-dbc6-4a02-8ec1-19ac0a670735'
+    }
+  ]
+} to 38057:0
+2025-06-18T12:08:30.068Z CLI info [testhub:request-queue-handler]  [prajaktapednekar_LTJbMS]  [ghxuh5tor03ql5d1jshvmwxir55htcmxissgukmp]  [af7e62bd-dff9-4fce-b824-e4404cb21f94]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'TestNG',
+      testFrameworkVersion: '7.4.0',
+      testFrameworkState: 'LOG',
+      timestamp: '2025-06-18T12:08:30.066Z',
+      uuid: 'ef72c047-dbc6-4a02-8ec1-19ac0a670735',
+      kind: 'TEST_LOG',
+      message: '"SLF4J: Defaulting to no-operation (NOP) logger implementation"',
+      level: 'ERROR',
+      test_run_uuid: 'ef72c047-dbc6-4a02-8ec1-19ac0a670735'
+    }
+  ]
+} to 38057:0
+2025-06-18T12:08:30.074Z CLI info [testhub:request-queue-handler]  [prajaktapednekar_LTJbMS]  [ghxuh5tor03ql5d1jshvmwxir55htcmxissgukmp]  [af7e62bd-dff9-4fce-b824-e4404cb21f94]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'TestNG',
+      testFrameworkVersion: '7.4.0',
+      testFrameworkState: 'LOG',
+      timestamp: '2025-06-18T12:08:30.072Z',
+      uuid: 'ef72c047-dbc6-4a02-8ec1-19ac0a670735',
+      kind: 'TEST_LOG',
+      message: '"SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details."',
+      level: 'ERROR',
+      test_run_uuid: 'ef72c047-dbc6-4a02-8ec1-19ac0a670735'
+    }
+  ]
+} to 38057:0
+2025-06-18T12:08:30.109Z CLI info [testhub:request-queue-handler]  [prajaktapednekar_LTJbMS]  [ghxuh5tor03ql5d1jshvmwxir55htcmxissgukmp]  [af7e62bd-dff9-4fce-b824-e4404cb21f94]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'TestNG',
+      testFrameworkVersion: '7.4.0',
+      testFrameworkState: 'LOG',
+      timestamp: '2025-06-18T12:08:30.107Z',
+      uuid: 'ef72c047-dbc6-4a02-8ec1-19ac0a670735',
+      kind: 'TEST_LOG',
+      message: '"WARNING: sun.reflect.Reflection.getCallerClass is not supported. This will impact performance."',
+      level: 'INFO',
+      test_run_uuid: 'ef72c047-dbc6-4a02-8ec1-19ac0a670735'
+    }
+  ]
+} to 38057:0
+2025-06-18T12:08:30.303Z CLI info [accessibility:module]  [prajaktapednekar_LTJbMS]  [ghxuh5tor03ql5d1jshvmwxir55htcmxissgukmp]  [af7e62bd-dff9-4fce-b824-e4404cb21f94]  onDriverInit: af7e62bd-dff9-4fce-b824-e4404cb21f94 platformIndex=0
+2025-06-18T12:08:30.304Z CLI info [accessibility:module]  [prajaktapednekar_LTJbMS]  [ghxuh5tor03ql5d1jshvmwxir55htcmxissgukmp]  [af7e62bd-dff9-4fce-b824-e4404cb21f94]  onDriverInit: af7e62bd-dff9-4fce-b824-e4404cb21f94 platformIndex=0 isSupported=true
+2025-06-18T12:08:30.304Z CLI info [accessibility:module]  [prajaktapednekar_LTJbMS]  [ghxuh5tor03ql5d1jshvmwxir55htcmxissgukmp]  [af7e62bd-dff9-4fce-b824-e4404cb21f94]  onDriverInit: platformIndex=0 stored capabilities
+2025-06-18T12:08:30.336Z CLI info [accessibility:service]  [prajaktapednekar_LTJbMS]  [ghxuh5tor03ql5d1jshvmwxir55htcmxissgukmp]  [af7e62bd-dff9-4fce-b824-e4404cb21f94]  AccessibilityConfig: platformIndex=0 isSupported=true platform=undefined:latest
+2025-06-18T12:08:31.716Z CLI info [testhub:request-queue-handler]  [prajaktapednekar_LTJbMS]  [ghxuh5tor03ql5d1jshvmwxir55htcmxissgukmp]  [af7e62bd-dff9-4fce-b824-e4404cb21f94]  Processing batch event [
+  {
+    event_type: 'HookRunStarted',
+    hook_run: {
+      type: 'hook',
+      hook_type: 'BEFORE_METHOD',
+      framework: 'TestNG',
+      uuid: 'ef72c047-dbc6-4a02-8ec1-19ac0a670735',
+      name: 'setUp',
+      result: 'pending',
+      test_run_id: '0151e08c-47b4-4bb1-9d30-34838debdc55',
+      body: [Object],
+      scope: 'Cross-Platform.com.browserstack.BStackDemoTest',
+      custom_metadata: {},
+      tags: [],
+      scopes: [Array],
+      file_name: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+      vc_filepath: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+      location: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+      started_at: '2025-06-18T12:08:29.938Z'
+    },
+    logs: []
+  },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] }
+] to 38057:0
+2025-06-18T12:08:39.009Z CLI info [testhub:request-queue-handler]  [prajaktapednekar_LTJbMS]  [ghxuh5tor03ql5d1jshvmwxir55htcmxissgukmp]  [af7e62bd-dff9-4fce-b824-e4404cb21f94]  Added the event {
+  event_type: 'HookRunFinished',
+  hook_run: {
+    type: 'hook',
+    hook_type: 'BEFORE_METHOD',
+    framework: 'TestNG',
+    uuid: 'ef72c047-dbc6-4a02-8ec1-19ac0a670735',
+    name: 'setUp',
+    result: 'passed',
+    test_run_id: '0151e08c-47b4-4bb1-9d30-34838debdc55',
+    body: { lang: 'java', code: null },
+    scope: 'Cross-Platform.com.browserstack.BStackDemoTest',
+    custom_metadata: {},
+    tags: [],
+    scopes: [ 'Cross-Platform', 'com.browserstack.BStackDemoTest' ],
+    file_name: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+    vc_filepath: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+    location: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+    started_at: '2025-06-18T12:08:29.938Z',
+    finished_at: '2025-06-18T12:08:39.006Z'
+  },
+  logs: []
+} to 38057:0
+2025-06-18T12:08:39.019Z CLI info [testhub:request-queue-handler]  [prajaktapednekar_LTJbMS]  [ghxuh5tor03ql5d1jshvmwxir55htcmxissgukmp]  [af7e62bd-dff9-4fce-b824-e4404cb21f94]  Added the event {
+  event_type: 'TestRunStarted',
+  test_run: {
+    type: 'test',
+    framework: 'TestNG',
+    uuid: '0151e08c-47b4-4bb1-9d30-34838debdc55',
+    name: 'addProductToCart',
+    body: {
+      lang: 'java',
+      code: 'public void com.browserstack.BStackDemoTest.addProductToCart() throws java.lang.Exception'
+    },
+    identifier: 'addProductToCart',
+    scope: 'Cross-Platform.com.browserstack.BStackDemoTest',
+    scopes: [ 'Cross-Platform', 'com.browserstack.BStackDemoTest' ],
+    file_name: 'src/test/java/com/browserstack/BStackDemoTest.java',
+    vc_filepath: 'src/test/java/com/browserstack/BStackDemoTest.java',
+    location: 'src/test/java/com/browserstack/BStackDemoTest.java',
+    meta: {},
+    result: 'pending',
+    duration_in_ms: null,
+    started_at: '2025-06-18T12:08:39.017Z',
+    failure: undefined,
+    failure_type: undefined,
+    failure_reason: undefined,
+    retry_of: null,
+    custom_metadata: {},
+    tags: [],
+    customRerunParam: { rerun_name: 'BStackDemo-0' },
+    hooks: [],
+    product_map: {
+      observability: true,
+      accessibility: true,
+      percy: false,
+      automate: true,
+      app_automate: false
+    }
+  },
+  logs: []
+} to 38057:0
+2025-06-18T12:08:39.719Z CLI info [testhub:request-queue-handler]  [prajaktapednekar_LTJbMS]  [ghxuh5tor03ql5d1jshvmwxir55htcmxissgukmp]  [af7e62bd-dff9-4fce-b824-e4404cb21f94]  Processing batch event [
+  {
+    event_type: 'HookRunFinished',
+    hook_run: {
+      type: 'hook',
+      hook_type: 'BEFORE_METHOD',
+      framework: 'TestNG',
+      uuid: 'ef72c047-dbc6-4a02-8ec1-19ac0a670735',
+      name: 'setUp',
+      result: 'passed',
+      test_run_id: '0151e08c-47b4-4bb1-9d30-34838debdc55',
+      body: [Object],
+      scope: 'Cross-Platform.com.browserstack.BStackDemoTest',
+      custom_metadata: {},
+      tags: [],
+      scopes: [Array],
+      file_name: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+      vc_filepath: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+      location: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+      started_at: '2025-06-18T12:08:29.938Z',
+      finished_at: '2025-06-18T12:08:39.006Z'
+    },
+    logs: []
+  },
+  {
+    event_type: 'TestRunStarted',
+    test_run: {
+      type: 'test',
+      framework: 'TestNG',
+      uuid: '0151e08c-47b4-4bb1-9d30-34838debdc55',
+      name: 'addProductToCart',
+      body: [Object],
+      identifier: 'addProductToCart',
+      scope: 'Cross-Platform.com.browserstack.BStackDemoTest',
+      scopes: [Array],
+      file_name: 'src/test/java/com/browserstack/BStackDemoTest.java',
+      vc_filepath: 'src/test/java/com/browserstack/BStackDemoTest.java',
+      location: 'src/test/java/com/browserstack/BStackDemoTest.java',
+      meta: {},
+      result: 'pending',
+      duration_in_ms: null,
+      started_at: '2025-06-18T12:08:39.017Z',
+      failure: undefined,
+      failure_type: undefined,
+      failure_reason: undefined,
+      retry_of: null,
+      custom_metadata: {},
+      tags: [],
+      customRerunParam: [Object],
+      hooks: [],
+      product_map: [Object]
+    },
+    logs: []
+  }
+] to 38057:0
+2025-06-18T12:09:19.711Z CLI info [testhub:request-queue-handler]  [prajaktapednekar_LTJbMS]  [ghxuh5tor03ql5d1jshvmwxir55htcmxissgukmp]  [af7e62bd-dff9-4fce-b824-e4404cb21f94]  Added the event {
+  event_type: 'CBTSessionCreated',
+  test_run: {
+    uuid: '0151e08c-47b4-4bb1-9d30-34838debdc55',
+    integrations: { browserstack: [Object] }
+  }
+} to 38057:0
+2025-06-18T12:09:19.718Z CLI warn [observability:java:testng]  [prajaktapednekar_LTJbMS]  [ghxuh5tor03ql5d1jshvmwxir55htcmxissgukmp]  [af7e62bd-dff9-4fce-b824-e4404cb21f94]  TestRunFinished: event={"test_hook_last_started":"BEFORE_METHOD","test_failure_type":null,"test_rerun_name":"BStackDemo-0","test_result_at":"2025-06-18T17:39:18.521593","test_scope":"Cross-Platform.com.browserstack.BStackDemoTest","test_framework_name":"TestNG","test_tags":"","cbt_session_created":true,"test_started_at":"2025-06-18T17:38:39.017278","platform_index":0,"test_failure":null,"test_framework_version":"7.4.0","test_logs":[],"test_scopes":["Cross-Platform","com.browserstack.BStackDemoTest"],"test_code":"public void com.browserstack.BStackDemoTest.addProductToCart() throws java.lang.Exception","test_id":"BStackDemo-0@0","test_uuid":"0151e08c-47b4-4bb1-9d30-34838debdc55","test_ended_at":"2025-06-18T17:39:18.523148","automate_session_name":"BStackDemo-00","test_hook_last_finished":"BEFORE_METHOD","test_session_name":"com.browserstack.BStackDemoTest-addProductToCart","test_hook_state":"sdk:hook:38a89b8e","custom_metadata":{},"test_failure_reason":null,"test_location":"src/test/java/com/browserstack/BStackDemoTest.java","test_hooks_started":{"BEFORE_METHOD":[]},"test_file_path":"src/test/java/com/browserstack/BStackDemoTest.java","test_result":"passed","test_hooks_finished":{"BEFORE_METHOD":[{"hook_name":"setUp","hook_result":"passed","test_file_path":"testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java","event_started_at":"2025-06-18T17:38:29.938812","hook_id":"ef72c047-dbc6-4a02-8ec1-19ac0a670735","hook_logs":[],"logs":[],"key":"BEFORE_METHOD","custom_metadata":{},"event_ended_at":"2025-06-18T17:38:39.006879","test_location":"testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java"}]},"hook_id":"ef72c047-dbc6-4a02-8ec1-19ac0a670735","driver_init":true,"test_meta":{},"isBrowserstackAutomationSession":true,"test_name":"addProductToCart","test_init":true,"logs":[]}
+2025-06-18T12:09:19.718Z CLI info [testhub:request-queue-handler]  [prajaktapednekar_LTJbMS]  [ghxuh5tor03ql5d1jshvmwxir55htcmxissgukmp]  [af7e62bd-dff9-4fce-b824-e4404cb21f94]  Added the event {
+  event_type: 'TestRunFinished',
+  test_run: {
+    type: 'test',
+    framework: 'TestNG',
+    uuid: '0151e08c-47b4-4bb1-9d30-34838debdc55',
+    name: 'addProductToCart',
+    body: {
+      lang: 'java',
+      code: 'public void com.browserstack.BStackDemoTest.addProductToCart() throws java.lang.Exception'
+    },
+    identifier: 'addProductToCart',
+    scope: 'Cross-Platform.com.browserstack.BStackDemoTest',
+    scopes: [ 'Cross-Platform', 'com.browserstack.BStackDemoTest' ],
+    file_name: 'src/test/java/com/browserstack/BStackDemoTest.java',
+    vc_filepath: 'src/test/java/com/browserstack/BStackDemoTest.java',
+    location: 'src/test/java/com/browserstack/BStackDemoTest.java',
+    meta: {},
+    result: 'passed',
+    duration_in_ms: 39506,
+    started_at: '2025-06-18T12:08:39.017Z',
+    finished_at: '2025-06-18T12:09:18.523Z',
+    failure: null,
+    failure_type: null,
+    failure_reason: null,
+    retry_of: null,
+    custom_metadata: {},
+    tags: [],
+    customRerunParam: { rerun_name: 'BStackDemo-0' },
+    hooks: [ 'ef72c047-dbc6-4a02-8ec1-19ac0a670735' ],
+    product_map: {
+      observability: true,
+      accessibility: true,
+      percy: false,
+      automate: true,
+      app_automate: false
+    }
+  },
+  logs: []
+} to 38057:0
+2025-06-18T12:09:19.740Z CLI info [testhub:request-queue-handler]  [prajaktapednekar_LTJbMS]  [ghxuh5tor03ql5d1jshvmwxir55htcmxissgukmp]  [af7e62bd-dff9-4fce-b824-e4404cb21f94]  Processing batch event [
+  {
+    event_type: 'CBTSessionCreated',
+    test_run: {
+      uuid: '0151e08c-47b4-4bb1-9d30-34838debdc55',
+      integrations: [Object]
+    }
+  },
+  {
+    event_type: 'TestRunFinished',
+    test_run: {
+      type: 'test',
+      framework: 'TestNG',
+      uuid: '0151e08c-47b4-4bb1-9d30-34838debdc55',
+      name: 'addProductToCart',
+      body: [Object],
+      identifier: 'addProductToCart',
+      scope: 'Cross-Platform.com.browserstack.BStackDemoTest',
+      scopes: [Array],
+      file_name: 'src/test/java/com/browserstack/BStackDemoTest.java',
+      vc_filepath: 'src/test/java/com/browserstack/BStackDemoTest.java',
+      location: 'src/test/java/com/browserstack/BStackDemoTest.java',
+      meta: {},
+      result: 'passed',
+      duration_in_ms: 39506,
+      started_at: '2025-06-18T12:08:39.017Z',
+      finished_at: '2025-06-18T12:09:18.523Z',
+      failure: null,
+      failure_type: null,
+      failure_reason: null,
+      retry_of: null,
+      custom_metadata: {},
+      tags: [],
+      customRerunParam: [Object],
+      hooks: [Array],
+      product_map: [Object]
+    },
+    logs: []
+  }
+] to 38057:0
+2025-06-18T12:10:14.914Z CLI info [testhub:request-queue-handler]  [prajaktapednekar_LTJbMS]  [ghxuh5tor03ql5d1jshvmwxir55htcmxissgukmp]  [af7e62bd-dff9-4fce-b824-e4404cb21f94]  Added the event {
+  event_type: 'HookRunStarted',
+  hook_run: {
+    type: 'hook',
+    hook_type: 'AFTER_METHOD',
+    framework: 'TestNG',
+    uuid: '9bf4669c-0498-4d2b-a570-2081601583a6',
+    name: 'tearDown',
+    result: 'pending',
+    test_run_id: '0151e08c-47b4-4bb1-9d30-34838debdc55',
+    body: { lang: 'java', code: null },
+    scope: 'Cross-Platform.com.browserstack.BStackDemoTest',
+    custom_metadata: {},
+    tags: [],
+    scopes: [ 'Cross-Platform', 'com.browserstack.BStackDemoTest' ],
+    file_name: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+    vc_filepath: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+    location: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+    started_at: '2025-06-18T12:10:14.909Z'
+  },
+  logs: []
+} to 38057:0
+2025-06-18T12:10:15.773Z CLI info [testhub:request-queue-handler]  [prajaktapednekar_LTJbMS]  [ghxuh5tor03ql5d1jshvmwxir55htcmxissgukmp]  [af7e62bd-dff9-4fce-b824-e4404cb21f94]  Processing batch event [
+  {
+    event_type: 'HookRunStarted',
+    hook_run: {
+      type: 'hook',
+      hook_type: 'AFTER_METHOD',
+      framework: 'TestNG',
+      uuid: '9bf4669c-0498-4d2b-a570-2081601583a6',
+      name: 'tearDown',
+      result: 'pending',
+      test_run_id: '0151e08c-47b4-4bb1-9d30-34838debdc55',
+      body: [Object],
+      scope: 'Cross-Platform.com.browserstack.BStackDemoTest',
+      custom_metadata: {},
+      tags: [],
+      scopes: [Array],
+      file_name: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+      vc_filepath: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+      location: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+      started_at: '2025-06-18T12:10:14.909Z'
+    },
+    logs: []
+  }
+] to 38057:0
+2025-06-18T12:10:47.498Z CLI info [testhub:request-queue-handler]  [prajaktapednekar_LTJbMS]  [ghxuh5tor03ql5d1jshvmwxir55htcmxissgukmp]  [af7e62bd-dff9-4fce-b824-e4404cb21f94]  Added the event {
+  event_type: 'HookRunFinished',
+  hook_run: {
+    type: 'hook',
+    hook_type: 'AFTER_METHOD',
+    framework: 'TestNG',
+    uuid: '9bf4669c-0498-4d2b-a570-2081601583a6',
+    name: 'tearDown',
+    result: 'passed',
+    test_run_id: '0151e08c-47b4-4bb1-9d30-34838debdc55',
+    body: { lang: 'java', code: null },
+    scope: 'Cross-Platform.com.browserstack.BStackDemoTest',
+    custom_metadata: {},
+    tags: [],
+    scopes: [ 'Cross-Platform', 'com.browserstack.BStackDemoTest' ],
+    file_name: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+    vc_filepath: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+    location: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+    started_at: '2025-06-18T12:10:14.909Z',
+    finished_at: '2025-06-18T12:10:47.495Z'
+  },
+  logs: []
+} to 38057:0
+2025-06-18T12:10:47.785Z CLI info [testhub:request-queue-handler]  [prajaktapednekar_LTJbMS]  [ghxuh5tor03ql5d1jshvmwxir55htcmxissgukmp]  [af7e62bd-dff9-4fce-b824-e4404cb21f94]  Processing batch event [
+  {
+    event_type: 'HookRunFinished',
+    hook_run: {
+      type: 'hook',
+      hook_type: 'AFTER_METHOD',
+      framework: 'TestNG',
+      uuid: '9bf4669c-0498-4d2b-a570-2081601583a6',
+      name: 'tearDown',
+      result: 'passed',
+      test_run_id: '0151e08c-47b4-4bb1-9d30-34838debdc55',
+      body: [Object],
+      scope: 'Cross-Platform.com.browserstack.BStackDemoTest',
+      custom_metadata: {},
+      tags: [],
+      scopes: [Array],
+      file_name: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+      vc_filepath: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+      location: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+      started_at: '2025-06-18T12:10:14.909Z',
+      finished_at: '2025-06-18T12:10:47.495Z'
+    },
+    logs: []
+  }
+] to 38057:0
+2025-06-18T12:10:49.357Z CLI info [testhub:module]  [prajaktapednekar_LTJbMS]  [ghxuh5tor03ql5d1jshvmwxir55htcmxissgukmp]  [af7e62bd-dff9-4fce-b824-e4404cb21f94]  stopBuild: ghxuh5tor03ql5d1jshvmwxir55htcmxissgukmp request={"finished_at":"2025-06-18T12:10:48.037Z","finished_metadata":[],"custom_metadata":true} response={"data":""}
+2025-06-18T12:10:49.364Z CLI info [observability:module]  [prajaktapednekar_LTJbMS]  [ghxuh5tor03ql5d1jshvmwxir55htcmxissgukmp]  [af7e62bd-dff9-4fce-b824-e4404cb21f94]  Visit https://observability.browserstack.com/builds/ghxuh5tor03ql5d1jshvmwxir55htcmxissgukmp to view build report, insights, and many more debugging information all at one place!
+2025-06-18T12:10:53.364Z CLI info [main]  [prajaktapednekar_LTJbMS]  [ghxuh5tor03ql5d1jshvmwxir55htcmxissgukmp]  [af7e62bd-dff9-4fce-b824-e4404cb21f94]  Received graceful signal termination, performing cleanup
+2025-06-18T13:22:08.092Z CLI info [main]     Server listening on port: 5400
+2025-06-18T13:22:08.426Z CLI info [testhub:module]  [prajaktapednekar_LTJbMS]   [efb80671-089e-43e9-b56f-4b876f46ec45]  Starting testhub from 80762:0
+2025-06-18T13:22:08.427Z CLI info [testhub:module]  [prajaktapednekar_LTJbMS]   [efb80671-089e-43e9-b56f-4b876f46ec45]  startBuild: payload=
+
+{"started_at":"2025-06-18T13:22:08.427Z","host_info":{"hostname":"PrajaktaPednekar-FVFH81ZUQ05N","platform":"darwin","type":"Darwin","version":"Darwin Kernel Version 24.5.0: Tue Apr 22 19:48:46 PDT 2025; root:xnu-11417.121.6~2/RELEASE_ARM64_T8103","arch":"arm64"},"ci_info":{"build_number":null},"version_control":{"name":"git","sha":"8ad74f759f338e8428d2d543f472b35c72b80465","short_sha":"8ad74f759f","branch":"master","tag":null,"committer":"GitHub <noreply@github.com>","committer_date":"1689056734","author":"Karan Shah <64479353+karanshah-browserstack@users.noreply.github.com>","author_date":"1689056734","commit_message":"Merge pull request #126 from agarneha1331/fix-workflow","root":"/Users/prajaktapednekar/Documents/Debugging/Sel_Testng/testng-browserstack","common_git_dir":"/Users/prajaktapednekar/Documents/Debugging/Sel_Testng/testng-browserstack/.git","worktree_git_dir":"/Users/prajaktapednekar/Documents/Debugging/Sel_Testng/testng-browserstack/.git","last_tag":null,"commits_since_last_tag":null,"remotes":[{"name":"origin","url":"https://github.com/browserstack/testng-browserstack.git"}]},"project_name":"Automate_E2E_Flow","name":"Build_","build_identifier":"#2","build_run_identifier":null,"description":"","tags":[],"failed_tests_rerun":false,"accessibility":{"settings":{"wcagVersion":"wcag21aa","includeIssueType":{"bestPractice":true,"needsReview":true,"experimental":true}}},"framework_details":{"frameworkName":"TestNG","frameworkVersion":"7.4.0","sdkVersion":"1.32.13","cliVersion":"1.4.0","language":"java","testFramework":{"name":"selenium","version":"4.1.4"},"source":"testng:archetype-integrate:v1.2"},"product_map":{"observability":true,"accessibility":true,"percy":false,"automate":true,"app_automate":false},"browserstackAutomation":true}
+2025-06-18T13:22:21.570Z CLI info [testhub:request-queue-handler]  [prajaktapednekar_LTJbMS]  [1ugd0uc55froubfx5gcj4mc6n10ke8ngsbmhqbqm]  [efb80671-089e-43e9-b56f-4b876f46ec45]  Added the event {
+  event_type: 'HookRunStarted',
+  hook_run: {
+    type: 'hook',
+    hook_type: 'BEFORE_METHOD',
+    framework: 'TestNG',
+    uuid: 'a78f9105-5b2c-4f8a-8834-c84faf7aff30',
+    name: 'setUp',
+    result: 'pending',
+    test_run_id: '80b9b9ff-c334-4de3-860e-c6dcc5263d5f',
+    body: { lang: 'java', code: null },
+    scope: 'Cross-Platform.com.browserstack.BStackDemoTest',
+    custom_metadata: {},
+    tags: [],
+    scopes: [ 'Cross-Platform', 'com.browserstack.BStackDemoTest' ],
+    file_name: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+    vc_filepath: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+    location: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+    started_at: '2025-06-18T13:22:21.562Z'
+  },
+  logs: []
+} to 80762:0
+2025-06-18T13:22:21.684Z CLI info [testhub:request-queue-handler]  [prajaktapednekar_LTJbMS]  [1ugd0uc55froubfx5gcj4mc6n10ke8ngsbmhqbqm]  [efb80671-089e-43e9-b56f-4b876f46ec45]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'TestNG',
+      testFrameworkVersion: '7.4.0',
+      testFrameworkState: 'LOG',
+      timestamp: '2025-06-18T13:22:21.677Z',
+      uuid: 'a78f9105-5b2c-4f8a-8834-c84faf7aff30',
+      kind: 'TEST_LOG',
+      message: '"SLF4J: Failed to load class \\"org.slf4j.impl.StaticLoggerBinder\\"."',
+      level: 'ERROR',
+      test_run_uuid: 'a78f9105-5b2c-4f8a-8834-c84faf7aff30'
+    }
+  ]
+} to 80762:0
+2025-06-18T13:22:21.690Z CLI info [testhub:request-queue-handler]  [prajaktapednekar_LTJbMS]  [1ugd0uc55froubfx5gcj4mc6n10ke8ngsbmhqbqm]  [efb80671-089e-43e9-b56f-4b876f46ec45]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'TestNG',
+      testFrameworkVersion: '7.4.0',
+      testFrameworkState: 'LOG',
+      timestamp: '2025-06-18T13:22:21.688Z',
+      uuid: 'a78f9105-5b2c-4f8a-8834-c84faf7aff30',
+      kind: 'TEST_LOG',
+      message: '"SLF4J: Defaulting to no-operation (NOP) logger implementation"',
+      level: 'ERROR',
+      test_run_uuid: 'a78f9105-5b2c-4f8a-8834-c84faf7aff30'
+    }
+  ]
+} to 80762:0
+2025-06-18T13:22:21.694Z CLI info [testhub:request-queue-handler]  [prajaktapednekar_LTJbMS]  [1ugd0uc55froubfx5gcj4mc6n10ke8ngsbmhqbqm]  [efb80671-089e-43e9-b56f-4b876f46ec45]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'TestNG',
+      testFrameworkVersion: '7.4.0',
+      testFrameworkState: 'LOG',
+      timestamp: '2025-06-18T13:22:21.693Z',
+      uuid: 'a78f9105-5b2c-4f8a-8834-c84faf7aff30',
+      kind: 'TEST_LOG',
+      message: '"SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details."',
+      level: 'ERROR',
+      test_run_uuid: 'a78f9105-5b2c-4f8a-8834-c84faf7aff30'
+    }
+  ]
+} to 80762:0
+2025-06-18T13:22:21.730Z CLI info [testhub:request-queue-handler]  [prajaktapednekar_LTJbMS]  [1ugd0uc55froubfx5gcj4mc6n10ke8ngsbmhqbqm]  [efb80671-089e-43e9-b56f-4b876f46ec45]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'TestNG',
+      testFrameworkVersion: '7.4.0',
+      testFrameworkState: 'LOG',
+      timestamp: '2025-06-18T13:22:21.728Z',
+      uuid: 'a78f9105-5b2c-4f8a-8834-c84faf7aff30',
+      kind: 'TEST_LOG',
+      message: '"WARNING: sun.reflect.Reflection.getCallerClass is not supported. This will impact performance."',
+      level: 'INFO',
+      test_run_uuid: 'a78f9105-5b2c-4f8a-8834-c84faf7aff30'
+    }
+  ]
+} to 80762:0
+2025-06-18T13:22:21.746Z CLI info [testhub:request-queue-handler]  [prajaktapednekar_LTJbMS]  [1ugd0uc55froubfx5gcj4mc6n10ke8ngsbmhqbqm]  [efb80671-089e-43e9-b56f-4b876f46ec45]  Processing batch event [
+  {
+    event_type: 'HookRunStarted',
+    hook_run: {
+      type: 'hook',
+      hook_type: 'BEFORE_METHOD',
+      framework: 'TestNG',
+      uuid: 'a78f9105-5b2c-4f8a-8834-c84faf7aff30',
+      name: 'setUp',
+      result: 'pending',
+      test_run_id: '80b9b9ff-c334-4de3-860e-c6dcc5263d5f',
+      body: [Object],
+      scope: 'Cross-Platform.com.browserstack.BStackDemoTest',
+      custom_metadata: {},
+      tags: [],
+      scopes: [Array],
+      file_name: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+      vc_filepath: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+      location: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+      started_at: '2025-06-18T13:22:21.562Z'
+    },
+    logs: []
+  },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] }
+] to 80762:0
+2025-06-18T13:22:21.922Z CLI info [accessibility:module]  [prajaktapednekar_LTJbMS]  [1ugd0uc55froubfx5gcj4mc6n10ke8ngsbmhqbqm]  [efb80671-089e-43e9-b56f-4b876f46ec45]  onDriverInit: efb80671-089e-43e9-b56f-4b876f46ec45 platformIndex=0
+2025-06-18T13:22:21.922Z CLI info [accessibility:module]  [prajaktapednekar_LTJbMS]  [1ugd0uc55froubfx5gcj4mc6n10ke8ngsbmhqbqm]  [efb80671-089e-43e9-b56f-4b876f46ec45]  onDriverInit: efb80671-089e-43e9-b56f-4b876f46ec45 platformIndex=0 isSupported=true
+2025-06-18T13:22:21.922Z CLI info [accessibility:module]  [prajaktapednekar_LTJbMS]  [1ugd0uc55froubfx5gcj4mc6n10ke8ngsbmhqbqm]  [efb80671-089e-43e9-b56f-4b876f46ec45]  onDriverInit: platformIndex=0 stored capabilities
+2025-06-18T13:22:21.954Z CLI info [accessibility:service]  [prajaktapednekar_LTJbMS]  [1ugd0uc55froubfx5gcj4mc6n10ke8ngsbmhqbqm]  [efb80671-089e-43e9-b56f-4b876f46ec45]  AccessibilityConfig: platformIndex=0 isSupported=true platform=undefined:latest
+2025-06-18T13:22:31.028Z CLI info [testhub:request-queue-handler]  [prajaktapednekar_LTJbMS]  [1ugd0uc55froubfx5gcj4mc6n10ke8ngsbmhqbqm]  [efb80671-089e-43e9-b56f-4b876f46ec45]  Added the event {
+  event_type: 'HookRunFinished',
+  hook_run: {
+    type: 'hook',
+    hook_type: 'BEFORE_METHOD',
+    framework: 'TestNG',
+    uuid: 'a78f9105-5b2c-4f8a-8834-c84faf7aff30',
+    name: 'setUp',
+    result: 'passed',
+    test_run_id: '80b9b9ff-c334-4de3-860e-c6dcc5263d5f',
+    body: { lang: 'java', code: null },
+    scope: 'Cross-Platform.com.browserstack.BStackDemoTest',
+    custom_metadata: {},
+    tags: [],
+    scopes: [ 'Cross-Platform', 'com.browserstack.BStackDemoTest' ],
+    file_name: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+    vc_filepath: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+    location: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+    started_at: '2025-06-18T13:22:21.562Z',
+    finished_at: '2025-06-18T13:22:31.023Z'
+  },
+  logs: []
+} to 80762:0
+2025-06-18T13:22:31.042Z CLI info [testhub:request-queue-handler]  [prajaktapednekar_LTJbMS]  [1ugd0uc55froubfx5gcj4mc6n10ke8ngsbmhqbqm]  [efb80671-089e-43e9-b56f-4b876f46ec45]  Added the event {
+  event_type: 'TestRunStarted',
+  test_run: {
+    type: 'test',
+    framework: 'TestNG',
+    uuid: '80b9b9ff-c334-4de3-860e-c6dcc5263d5f',
+    name: 'addProductToCart',
+    body: {
+      lang: 'java',
+      code: 'public void com.browserstack.BStackDemoTest.addProductToCart() throws java.lang.Exception'
+    },
+    identifier: 'addProductToCart',
+    scope: 'Cross-Platform.com.browserstack.BStackDemoTest',
+    scopes: [ 'Cross-Platform', 'com.browserstack.BStackDemoTest' ],
+    file_name: 'src/test/java/com/browserstack/BStackDemoTest.java',
+    vc_filepath: 'src/test/java/com/browserstack/BStackDemoTest.java',
+    location: 'src/test/java/com/browserstack/BStackDemoTest.java',
+    meta: {},
+    result: 'pending',
+    duration_in_ms: null,
+    started_at: '2025-06-18T13:22:31.039Z',
+    failure: undefined,
+    failure_type: undefined,
+    failure_reason: undefined,
+    retry_of: null,
+    custom_metadata: {},
+    tags: [],
+    customRerunParam: { rerun_name: 'BStackDemo-0' },
+    hooks: [],
+    product_map: {
+      observability: true,
+      accessibility: true,
+      percy: false,
+      automate: true,
+      app_automate: false
+    }
+  },
+  logs: []
+} to 80762:0
+2025-06-18T13:22:31.750Z CLI info [testhub:request-queue-handler]  [prajaktapednekar_LTJbMS]  [1ugd0uc55froubfx5gcj4mc6n10ke8ngsbmhqbqm]  [efb80671-089e-43e9-b56f-4b876f46ec45]  Processing batch event [
+  {
+    event_type: 'HookRunFinished',
+    hook_run: {
+      type: 'hook',
+      hook_type: 'BEFORE_METHOD',
+      framework: 'TestNG',
+      uuid: 'a78f9105-5b2c-4f8a-8834-c84faf7aff30',
+      name: 'setUp',
+      result: 'passed',
+      test_run_id: '80b9b9ff-c334-4de3-860e-c6dcc5263d5f',
+      body: [Object],
+      scope: 'Cross-Platform.com.browserstack.BStackDemoTest',
+      custom_metadata: {},
+      tags: [],
+      scopes: [Array],
+      file_name: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+      vc_filepath: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+      location: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+      started_at: '2025-06-18T13:22:21.562Z',
+      finished_at: '2025-06-18T13:22:31.023Z'
+    },
+    logs: []
+  },
+  {
+    event_type: 'TestRunStarted',
+    test_run: {
+      type: 'test',
+      framework: 'TestNG',
+      uuid: '80b9b9ff-c334-4de3-860e-c6dcc5263d5f',
+      name: 'addProductToCart',
+      body: [Object],
+      identifier: 'addProductToCart',
+      scope: 'Cross-Platform.com.browserstack.BStackDemoTest',
+      scopes: [Array],
+      file_name: 'src/test/java/com/browserstack/BStackDemoTest.java',
+      vc_filepath: 'src/test/java/com/browserstack/BStackDemoTest.java',
+      location: 'src/test/java/com/browserstack/BStackDemoTest.java',
+      meta: {},
+      result: 'pending',
+      duration_in_ms: null,
+      started_at: '2025-06-18T13:22:31.039Z',
+      failure: undefined,
+      failure_type: undefined,
+      failure_reason: undefined,
+      retry_of: null,
+      custom_metadata: {},
+      tags: [],
+      customRerunParam: [Object],
+      hooks: [],
+      product_map: [Object]
+    },
+    logs: []
+  }
+] to 80762:0
+2025-06-18T13:23:14.679Z CLI info [testhub:request-queue-handler]  [prajaktapednekar_LTJbMS]  [1ugd0uc55froubfx5gcj4mc6n10ke8ngsbmhqbqm]  [efb80671-089e-43e9-b56f-4b876f46ec45]  Added the event {
+  event_type: 'CBTSessionCreated',
+  test_run: {
+    uuid: '80b9b9ff-c334-4de3-860e-c6dcc5263d5f',
+    integrations: { browserstack: [Object] }
+  }
+} to 80762:0
+2025-06-18T13:23:14.686Z CLI warn [observability:java:testng]  [prajaktapednekar_LTJbMS]  [1ugd0uc55froubfx5gcj4mc6n10ke8ngsbmhqbqm]  [efb80671-089e-43e9-b56f-4b876f46ec45]  TestRunFinished: event={"test_hook_last_started":"BEFORE_METHOD","test_failure_type":null,"test_rerun_name":"BStackDemo-0","test_result_at":"2025-06-18T18:53:13.531771","test_scope":"Cross-Platform.com.browserstack.BStackDemoTest","test_framework_name":"TestNG","test_tags":"","cbt_session_created":true,"test_started_at":"2025-06-18T18:52:31.039889","platform_index":0,"test_failure":null,"test_framework_version":"7.4.0","test_logs":[],"test_scopes":["Cross-Platform","com.browserstack.BStackDemoTest"],"test_code":"public void com.browserstack.BStackDemoTest.addProductToCart() throws java.lang.Exception","test_id":"BStackDemo-0@0","test_uuid":"80b9b9ff-c334-4de3-860e-c6dcc5263d5f","test_ended_at":"2025-06-18T18:53:13.533672","automate_session_name":"BStackDemo-00","test_hook_last_finished":"BEFORE_METHOD","test_session_name":"com.browserstack.BStackDemoTest-addProductToCart","test_hook_state":"sdk:hook:3450280a","custom_metadata":{},"test_failure_reason":null,"test_location":"src/test/java/com/browserstack/BStackDemoTest.java","test_hooks_started":{"BEFORE_METHOD":[]},"test_file_path":"src/test/java/com/browserstack/BStackDemoTest.java","test_result":"passed","test_hooks_finished":{"BEFORE_METHOD":[{"hook_name":"setUp","hook_result":"passed","test_file_path":"testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java","event_started_at":"2025-06-18T18:52:21.562022","hook_id":"a78f9105-5b2c-4f8a-8834-c84faf7aff30","hook_logs":[],"logs":[],"key":"BEFORE_METHOD","custom_metadata":{},"event_ended_at":"2025-06-18T18:52:31.023914","test_location":"testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java"}]},"hook_id":"a78f9105-5b2c-4f8a-8834-c84faf7aff30","driver_init":true,"test_meta":{},"isBrowserstackAutomationSession":true,"test_name":"addProductToCart","test_init":true,"logs":[]}
+2025-06-18T13:23:14.687Z CLI info [testhub:request-queue-handler]  [prajaktapednekar_LTJbMS]  [1ugd0uc55froubfx5gcj4mc6n10ke8ngsbmhqbqm]  [efb80671-089e-43e9-b56f-4b876f46ec45]  Added the event {
+  event_type: 'TestRunFinished',
+  test_run: {
+    type: 'test',
+    framework: 'TestNG',
+    uuid: '80b9b9ff-c334-4de3-860e-c6dcc5263d5f',
+    name: 'addProductToCart',
+    body: {
+      lang: 'java',
+      code: 'public void com.browserstack.BStackDemoTest.addProductToCart() throws java.lang.Exception'
+    },
+    identifier: 'addProductToCart',
+    scope: 'Cross-Platform.com.browserstack.BStackDemoTest',
+    scopes: [ 'Cross-Platform', 'com.browserstack.BStackDemoTest' ],
+    file_name: 'src/test/java/com/browserstack/BStackDemoTest.java',
+    vc_filepath: 'src/test/java/com/browserstack/BStackDemoTest.java',
+    location: 'src/test/java/com/browserstack/BStackDemoTest.java',
+    meta: {},
+    result: 'passed',
+    duration_in_ms: 42494,
+    started_at: '2025-06-18T13:22:31.039Z',
+    finished_at: '2025-06-18T13:23:13.533Z',
+    failure: null,
+    failure_type: null,
+    failure_reason: null,
+    retry_of: null,
+    custom_metadata: {},
+    tags: [],
+    customRerunParam: { rerun_name: 'BStackDemo-0' },
+    hooks: [ 'a78f9105-5b2c-4f8a-8834-c84faf7aff30' ],
+    product_map: {
+      observability: true,
+      accessibility: true,
+      percy: false,
+      automate: true,
+      app_automate: false
+    }
+  },
+  logs: []
+} to 80762:0
+2025-06-18T13:23:15.771Z CLI info [testhub:request-queue-handler]  [prajaktapednekar_LTJbMS]  [1ugd0uc55froubfx5gcj4mc6n10ke8ngsbmhqbqm]  [efb80671-089e-43e9-b56f-4b876f46ec45]  Processing batch event [
+  {
+    event_type: 'CBTSessionCreated',
+    test_run: {
+      uuid: '80b9b9ff-c334-4de3-860e-c6dcc5263d5f',
+      integrations: [Object]
+    }
+  },
+  {
+    event_type: 'TestRunFinished',
+    test_run: {
+      type: 'test',
+      framework: 'TestNG',
+      uuid: '80b9b9ff-c334-4de3-860e-c6dcc5263d5f',
+      name: 'addProductToCart',
+      body: [Object],
+      identifier: 'addProductToCart',
+      scope: 'Cross-Platform.com.browserstack.BStackDemoTest',
+      scopes: [Array],
+      file_name: 'src/test/java/com/browserstack/BStackDemoTest.java',
+      vc_filepath: 'src/test/java/com/browserstack/BStackDemoTest.java',
+      location: 'src/test/java/com/browserstack/BStackDemoTest.java',
+      meta: {},
+      result: 'passed',
+      duration_in_ms: 42494,
+      started_at: '2025-06-18T13:22:31.039Z',
+      finished_at: '2025-06-18T13:23:13.533Z',
+      failure: null,
+      failure_type: null,
+      failure_reason: null,
+      retry_of: null,
+      custom_metadata: {},
+      tags: [],
+      customRerunParam: [Object],
+      hooks: [Array],
+      product_map: [Object]
+    },
+    logs: []
+  }
+] to 80762:0
+2025-06-18T13:24:10.213Z CLI info [testhub:request-queue-handler]  [prajaktapednekar_LTJbMS]  [1ugd0uc55froubfx5gcj4mc6n10ke8ngsbmhqbqm]  [efb80671-089e-43e9-b56f-4b876f46ec45]  Added the event {
+  event_type: 'HookRunStarted',
+  hook_run: {
+    type: 'hook',
+    hook_type: 'AFTER_METHOD',
+    framework: 'TestNG',
+    uuid: 'fe221cc3-1bf5-42f0-830d-10324f34b9f1',
+    name: 'tearDown',
+    result: 'pending',
+    test_run_id: '80b9b9ff-c334-4de3-860e-c6dcc5263d5f',
+    body: { lang: 'java', code: null },
+    scope: 'Cross-Platform.com.browserstack.BStackDemoTest',
+    custom_metadata: {},
+    tags: [],
+    scopes: [ 'Cross-Platform', 'com.browserstack.BStackDemoTest' ],
+    file_name: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+    vc_filepath: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+    location: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+    started_at: '2025-06-18T13:24:10.207Z'
+  },
+  logs: []
+} to 80762:0
+2025-06-18T13:24:11.800Z CLI info [testhub:request-queue-handler]  [prajaktapednekar_LTJbMS]  [1ugd0uc55froubfx5gcj4mc6n10ke8ngsbmhqbqm]  [efb80671-089e-43e9-b56f-4b876f46ec45]  Processing batch event [
+  {
+    event_type: 'HookRunStarted',
+    hook_run: {
+      type: 'hook',
+      hook_type: 'AFTER_METHOD',
+      framework: 'TestNG',
+      uuid: 'fe221cc3-1bf5-42f0-830d-10324f34b9f1',
+      name: 'tearDown',
+      result: 'pending',
+      test_run_id: '80b9b9ff-c334-4de3-860e-c6dcc5263d5f',
+      body: [Object],
+      scope: 'Cross-Platform.com.browserstack.BStackDemoTest',
+      custom_metadata: {},
+      tags: [],
+      scopes: [Array],
+      file_name: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+      vc_filepath: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+      location: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+      started_at: '2025-06-18T13:24:10.207Z'
+    },
+    logs: []
+  }
+] to 80762:0
+2025-06-18T13:24:42.372Z CLI info [testhub:request-queue-handler]  [prajaktapednekar_LTJbMS]  [1ugd0uc55froubfx5gcj4mc6n10ke8ngsbmhqbqm]  [efb80671-089e-43e9-b56f-4b876f46ec45]  Added the event {
+  event_type: 'HookRunFinished',
+  hook_run: {
+    type: 'hook',
+    hook_type: 'AFTER_METHOD',
+    framework: 'TestNG',
+    uuid: 'fe221cc3-1bf5-42f0-830d-10324f34b9f1',
+    name: 'tearDown',
+    result: 'passed',
+    test_run_id: '80b9b9ff-c334-4de3-860e-c6dcc5263d5f',
+    body: { lang: 'java', code: null },
+    scope: 'Cross-Platform.com.browserstack.BStackDemoTest',
+    custom_metadata: {},
+    tags: [],
+    scopes: [ 'Cross-Platform', 'com.browserstack.BStackDemoTest' ],
+    file_name: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+    vc_filepath: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+    location: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+    started_at: '2025-06-18T13:24:10.207Z',
+    finished_at: '2025-06-18T13:24:42.367Z'
+  },
+  logs: []
+} to 80762:0
+2025-06-18T13:24:43.816Z CLI info [testhub:request-queue-handler]  [prajaktapednekar_LTJbMS]  [1ugd0uc55froubfx5gcj4mc6n10ke8ngsbmhqbqm]  [efb80671-089e-43e9-b56f-4b876f46ec45]  Processing batch event [
+  {
+    event_type: 'HookRunFinished',
+    hook_run: {
+      type: 'hook',
+      hook_type: 'AFTER_METHOD',
+      framework: 'TestNG',
+      uuid: 'fe221cc3-1bf5-42f0-830d-10324f34b9f1',
+      name: 'tearDown',
+      result: 'passed',
+      test_run_id: '80b9b9ff-c334-4de3-860e-c6dcc5263d5f',
+      body: [Object],
+      scope: 'Cross-Platform.com.browserstack.BStackDemoTest',
+      custom_metadata: {},
+      tags: [],
+      scopes: [Array],
+      file_name: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+      vc_filepath: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+      location: 'testng-browserstack/src/test/java/com/browserstack/BStackDemoTest.java',
+      started_at: '2025-06-18T13:24:10.207Z',
+      finished_at: '2025-06-18T13:24:42.367Z'
+    },
+    logs: []
+  }
+] to 80762:0
+2025-06-18T13:24:45.373Z CLI info [testhub:module]  [prajaktapednekar_LTJbMS]  [1ugd0uc55froubfx5gcj4mc6n10ke8ngsbmhqbqm]  [efb80671-089e-43e9-b56f-4b876f46ec45]  stopBuild: 1ugd0uc55froubfx5gcj4mc6n10ke8ngsbmhqbqm request={"finished_at":"2025-06-18T13:24:42.838Z","finished_metadata":[],"custom_metadata":true} response={"data":""}
+2025-06-18T13:24:45.381Z CLI info [observability:module]  [prajaktapednekar_LTJbMS]  [1ugd0uc55froubfx5gcj4mc6n10ke8ngsbmhqbqm]  [efb80671-089e-43e9-b56f-4b876f46ec45]  Visit https://observability.browserstack.com/builds/1ugd0uc55froubfx5gcj4mc6n10ke8ngsbmhqbqm to view build report, insights, and many more debugging information all at one place!
+2025-06-18T13:24:49.332Z CLI info [main]  [prajaktapednekar_LTJbMS]  [1ugd0uc55froubfx5gcj4mc6n10ke8ngsbmhqbqm]  [efb80671-089e-43e9-b56f-4b876f46ec45]  Received graceful signal termination, performing cleanup
