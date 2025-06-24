@@ -1,39 +1,17 @@
 pipeline {
-    agent any
-
-    environment {
-        BROWSERSTACK_USERNAME = credentials('browserstack-username')
-        BROWSERSTACK_ACCESS_KEY = credentials('browserstack-access-key')
-    }
-
-    tools {
-        maven 'Maven 3.8.6'     // Match this with Maven installed on Jenkins
-        jdk 'JDK 11'            // Match your Java version
-    }
-
-    stages {
-        stage('Checkout Code') {
-            steps {
-                git 'https://github.com/prajakta199/sel_test.git'  // Replace with your repo URL
-            }
+  agent any
+  environment {
+    BS_CREDENTIAL_ID = 'c0a615d1-bcd6-4909-9043-fcca87fd1421'  // Your variable storing credential ID
+  }
+  stages {
+    stage('Run Tests') {
+      steps {
+        script {
+          withCredentials([usernamePassword(credentialsId: env.BS_CREDENTIAL_ID, usernameVariable: 'BROWSERSTACK_USERNAME', passwordVariable: 'BROWSERSTACK_ACCESS_KEY')]) {
+            sh 'mvn clean test -Dbrowserstack.username=$BROWSERSTACK_USERNAME -Dbrowserstack.accesskey=$BROWSERSTACK_ACCESS_KEY -DsuiteXmlFile=testng.xml'
+          }
         }
-
-        stage('Build Project') {
-            steps {
-                sh 'mvn clean compile'
-            }
-        }
-
-        stage('Run Selenium Tests on BrowserStack') {
-            steps {
-                sh 'mvn test'
-            }
-        }
+      }
     }
-
-    post {
-        always {
-            junit 'test-output/testng-results.xml' // Adjust if your result path is different
-        }
-    }
+  }
 }
