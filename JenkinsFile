@@ -14,7 +14,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/prajakta199/Selenium_Testng'  // Replace with your repo URL
+                git 'https://github.com/prajakta199/testng-browserstack.git'  // Replace with your repo URL
             }
         }
 
