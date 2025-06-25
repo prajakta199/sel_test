@@ -10,7 +10,7 @@ pipeline {
                     sh 'browserstack-node-sdk jest src/sample.test.js'
                 }
             }
-            # ...
+           
           }
         }
       }
