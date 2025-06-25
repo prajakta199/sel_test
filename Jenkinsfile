@@ -1,20 +1,31 @@
 pipeline {
-      agent any
- tools {
-    nodejs 'node'
-}
+    agent any
 
-      stages {
-          stage('setup') {
+    tools {
+        maven 'Maven 3.8.6'  // your configured Maven installation name
+        jdk 'JDK 11'         // your configured JDK installation name
+    }
+
+    stages {
+        stage('Checkout') {
             steps {
-                browserstack(credentialsId: 'c0a615d1-bcd6-4909-9043-fcca87fd1421') {
-                    // add commands to run test
-                    // Following are some of the example commands -----
-                    sh 'npm install'
-                    sh 'browserstack-node-sdk jest src/BstackDemoTest.java'
+                checkout scm
+            }
+        }
+
+        stage('Run BrowserStack Tests') {
+            steps {
+                // Pass your BrowserStack credential ID configured in Jenkins BrowserStack plugin UI
+                browserstack(credentialId: 'bs-cred-id-from-jenkins-ui') {
+                    sh 'mvn clean test'
                 }
             }
-           
-          }
         }
-      }
+
+        stage('Publish Test Results') {
+            steps {
+                junit '**/target/surefire-reports/*.xml'
+            }
+        }
+    }
+}
