@@ -15,7 +15,7 @@ pipeline {
 
         stage('Run Selenium TestNG Tests on BrowserStack') {
             steps {
-                browserstack(credentialId: 'c0a615d1-bcd6-4909-9043-fcca87fd1421	') {
+                browserstack(credentialsId: 'c0a615d1-bcd6-4909-9043-fcca87fd1421	') {
                     sh 'mvn clean test'
                 }
             }
