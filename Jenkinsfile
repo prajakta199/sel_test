@@ -1,22 +1,25 @@
 pipeline {
   agent any
+  tools {
+    nodejs 'NodeJS 18' // or whatever you’ve configured in Jenkins (can skip if not using SDK CLI)
+  }
   environment {
-    BS_CREDENTIAL_ID = 'c0a615d1-bcd6-4909-9043-fcca87fd1421' // Replace with your actual credential ID
+    BROWSERSTACK_CRED_ID = 'c0a615d1-bcd6-4909-9043-fcca87fd1421' // Your BrowserStack credential ID (plugin-specific)
   }
   stages {
-    stage('Run on BrowserStack') {
+    stage('Install BrowserStack SDK') {
       steps {
-        script {
-          withCredentials([
-            usernamePassword(
-              credentialsId: env.BS_CREDENTIAL_ID,
-              usernameVariable: 'BROWSERSTACK_USERNAME',
-              passwordVariable: 'BROWSERSTACK_ACCESS_KEY'
-            )
-          ]) {
-            // ✅ Actual Maven command to trigger build
-            sh 'mvn clean test -Dbrowserstack.username=$BROWSERSTACK_USERNAME -Dbrowserstack.accesskey=$BROWSERSTACK_ACCESS_KEY -DsuiteXmlFile=testng.xml'
-          }
+        sh 'npm install -g browserstack-sdk'
+      }
+    }
+
+    stage('Run Selenium TestNG Tests on BrowserStack') {
+      steps {
+        withCredentials([
+          [$class: 'BrowserStackCredentials', credentialsId: env.BROWSERSTACK_CRED_ID]
+        ]) {
+          // SDK picks up BROWSERSTACK_USERNAME and BROWSERSTACK_ACCESS_KEY automatically
+          sh 'npx browserstack-sdk --sync'
         }
       }
     }
