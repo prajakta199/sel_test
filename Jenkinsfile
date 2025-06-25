@@ -1,7 +1,7 @@
 pipeline {
   agent any
   tools {
-    nodejs 'NodeJS 18' // or whatever you’ve configured in Jenkins (can skip if not using SDK CLI)
+    nodejs 'node' // or whatever you’ve configured in Jenkins (can skip if not using SDK CLI)
   }
   environment {
     BROWSERSTACK_CRED_ID = 'c0a615d1-bcd6-4909-9043-fcca87fd1421' // Your BrowserStack credential ID (plugin-specific)
