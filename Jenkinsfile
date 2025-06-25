@@ -12,7 +12,7 @@ pipeline {
             steps {
                 browserstack(credentialsId: 'c0a615d1-bcd6-4909-9043-fcca87fd1421') {
                     // Run Maven test with specific TestNG XML
-                    sh 'mvn clean test -Dsurefire.suiteXmlFiles=sample-test.testng.xml'
+                 sh 'mvn clean test -Dsurefire.suiteXmlFiles=config/sample-test.testng.xml'
                 }
             }
         }
