@@ -1,7 +1,7 @@
 pipeline {
   agent any
   environment {
-    BS_CREDENTIAL_ID = 'your-jenkins-credential-id' // Replace with your actual credential ID
+    BS_CREDENTIAL_ID = 'c0a615d1-bcd6-4909-9043-fcca87fd1421' // Replace with your actual credential ID
   }
   stages {
     stage('Run on BrowserStack') {
