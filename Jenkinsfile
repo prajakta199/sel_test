@@ -15,7 +15,7 @@ pipeline {
         stage('Run Selenium TestNG Tests on BrowserStack') {
             steps {
                 script {
-                    browserstack(credentialsId: "${env.cred}") {
+                    browserstack(credentialsId: "test_bstack") {
                         sh 'mvn clean test -Dsurefire.suiteXmlFiles=config/sample-test.testng.xml'
                     }
                 }
