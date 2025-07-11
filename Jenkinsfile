@@ -60,7 +60,7 @@ pipeline {
                                         dir(env.WORKSPACE){
                                             catchError(buildResult:'FAILURE', stageResult:'FAILURE'){
                                                 if(Environment.equalsIgnoreCase("")) {
-                                                   ])
+                                                   
                                                     {
                                                         sh "echo Running the build in '${Environment}' environment"
                                                         sh "mvn clean test -DBrowserType=browserstack_'${exebrowser}' -DsuiteXmlFile=testng.xml -DprojName=ABC -DPlatform_password=$PASSWORD -DGroupToRun='${GroupsToRun}' -DAutomate_key=$Automate_key -DMFA_secret=$mfa_secret -DMFA_recover_code=$mfa_recovery -Demail_passcode=$EmailAuthPasscode -DEnvironment=$Environment -DRetry_Count=$Retry_Count -DClientSecret=$ClientSecret"
