@@ -50,7 +50,7 @@ pipeline {
 
             steps{
                 script{
-                    browserstack(credentialsId: "browserstack-api-creds"){
+                    browserstack(credentialsId: "test_bstack"){
                         unzip zipFile: 'libs/archive-jar.zip', dir: 'libs'
                         web.each{
                             if(it.value){
@@ -59,28 +59,10 @@ pipeline {
                                     stage("Running ${GroupsToRun} TestGroups"){
                                         dir(env.WORKSPACE){
                                             catchError(buildResult:'FAILURE', stageResult:'FAILURE'){
-                                                if(Environment.equalsIgnoreCase("")) {
-                                                   
-                                                    {
-                                                        sh "echo Running the build in '${Environment}' environment"
-                                                        sh "mvn clean test -DBrowserType=browserstack_'${exebrowser}' -DsuiteXmlFile=testng.xml -DprojName=ABC -DPlatform_password=$PASSWORD -DGroupToRun='${GroupsToRun}' -DAutomate_key=$Automate_key -DMFA_secret=$mfa_secret -DMFA_recover_code=$mfa_recovery -Demail_passcode=$EmailAuthPasscode -DEnvironment=$Environment -DRetry_Count=$Retry_Count -DClientSecret=$ClientSecret"
-                                                    }
-                                                } else {
-                                                    withCredentials([string(credentialsId: 'automationPassword-Admin', variable: 'PASSWORD'), string(credentialsId:'browser_stack_automation_key', variable: 'Automate_key'),  string(credentialsId:'mfa_secrect_key', variable: 'mfa_secret'), string(credentialsId:'mfa_recovery_code', variable: 'mfa_recovery'), string(credentialsId:'cancelCallback-AuthToken', variable: 'AuthToken')]) {
-                                                        sh "echo Running the build in '${Environment}' environment"
-                                                        sh "mvn clean test -DBrowserType=browserstack_'${exebrowser}' -DsuiteXmlFile=testng.xml -DprojName=ABC -DPlatform_password=$PASSWORD -DGroupToRun='${GroupsToRun}' -DAutomate_key=$Automate_key -DMFA_secret=$mfa_secret -DMFA_recover_code=$mfa_recovery -DEnvironment=$Environment -DRetry_Count=$Retry_Count -DAuthToken=$AuthToken"
-                                                    }
+                                                sh 'mvn clean test -Dsurefire.suiteXmlFiles=config/sample-test.testng.xml'
 
                                             }
 
-                                            if((params.AXE && GroupsSelectedSize >= 1) || (params.RunEntireSuite && GroupsSelectedSize == 1)){
-                                                sh "npm i -D axe-html-reporter"
-                                                if("${exebrowser}".contains('chrome')){
-                                                    sh "node AxeHTMLReport.js"
-                                                }
-                                                else{
-                                                    echo "Skipping Axe reports on non chrome browsers"
-                                                }
                                             }
                                             sh ""
                                         }
