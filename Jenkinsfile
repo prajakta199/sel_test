@@ -1,17 +1,7 @@
 
 
 pipeline {
-    agent {
-        dockerfile {
-            filename 'Dockerfile'
-            dir 'jenkins'
-        }
-    }
-
-    environment {
-
-    }
-
+   
     stages {
         stage('Read Jenkinsfile') {
             when {
