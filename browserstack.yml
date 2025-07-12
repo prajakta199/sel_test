@@ -23,6 +23,12 @@ platforms:
 
 parallelsPerPlatform: 1
 accessibility: true
+accessibilityOptions:
+    wcagVersion: wcag21aaa # Default: wcag21aa
+    includeIssueType: 
+        bestPractice: true # Default: false
+        needsReview: true # Default: true
+        experimental: true # Default: true
 
 browserstackLocal: true # <boolean> (Default false)
 debug: true # <boolean> # Set to true if you need screenshots for every selenium command ran
