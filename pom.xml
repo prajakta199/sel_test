@@ -59,7 +59,7 @@
                 <version>${surefire.version}</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFile>${config.file}</suiteXmlFile>
+                        <suiteXmlFile>config/sample-test.testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
                     <argLine>
                         -javaagent:${com.browserstack:browserstack-java-sdk:jar}
