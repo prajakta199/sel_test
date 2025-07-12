@@ -20,7 +20,7 @@ accessibilityOptions:
         needsReview: true # Default: true
         experimental: true # Default: true
 
-browserStackAutomation : true
+browserstackAutomation: true
 browserstackLocal: true # <boolean> (Default false)
 debug: true # <boolean> # Set to true if you need screenshots for every selenium command ran
 networkLogs: false # <boolean> Set to true to enable HAR logs capturing
