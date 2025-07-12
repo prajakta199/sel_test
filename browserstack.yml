@@ -7,21 +7,23 @@ framework: testng
 source: testng:archetype-integrate:v1.2
 
 platforms:
+
   - os: Windows
     osVersion: 10
-    browserName: Chrome
-    browserVersion: 120.0
-#parallelsPerPlatform: 1
+    browser: Chrome
+    browserVersion: latest
 accessibility: true
 accessibilityOptions:
-    wcagVersion: wcag21aaa # Default: wcag21aa
-    includeIssueType: 
-        bestPractice: true # Default: false
-        needsReview: true # Default: true
-        experimental: true # Default: true
+  wcagVersion: wcag21aa # Default: wcag21aa
+  includeIssueType:
+    bestPractice: true # Default: false
+    needsReview: true # Default: true
+    experimental: true # Default: true
 
+browserStackAutomation : true
+#parallelsPerPlatform: 1
 browserstackLocal: true # <boolean> (Default false)
 debug: true # <boolean> # Set to true if you need screenshots for every selenium command ran
-networkLogs: false # <boolean> Set to true to enable HAR logs capturing
-consoleLogs: verbose  # <string> Remote browser's console debug levels to be printed (Default: errors)
+#networkLogs: false # <boolean> Set to true to enable HAR logs capturing
+#consoleLogs: verbose  # <string> Remote browser's console debug levels to be printed (Default: errors)
 # Available options are `disable`, `errors`, `warnings`, `info`, `verbose` (Default: errors)
