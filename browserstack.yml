@@ -11,7 +11,7 @@ platforms:
     osVersion: 10
     browserName: Chrome
     browserVersion: 120.0
-#parallelsPerPlatform: 1
+parallelsPerPlatform: 1
 accessibility: true
 accessibilityOptions:
     wcagVersion: wcag21aaa # Default: wcag21aa
