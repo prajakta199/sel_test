@@ -60,13 +60,14 @@
                 <configuration>
                        <forkCount>0</forkCount>
 
-                        <argLine>
-                            -javaagent:"${com.browserstack:browserstack-java-sdk:jar}" -config/sample-test.testng
-                        </argLine>
+                        
 
                         <suiteXmlFiles>-->
-                            <suiteXmlFile>${config/sample-test}</suiteXmlFile>
+                            <suiteXmlFile>${config.file}</suiteXmlFile>
                         </suiteXmlFiles>
+                         <argLine>
+                            -javaagent:"${com.browserstack:browserstack-java-sdk:jar}" -config/sample-test.testng
+                        </argLine>
                         </configuration>
             </plugin>
             <plugin>
