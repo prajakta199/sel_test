@@ -65,7 +65,7 @@
                         </argLine>
 
                         <suiteXmlFiles>-->
-                            <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
+                            <suiteXmlFile>${config/sample-test}</suiteXmlFile>
                         </suiteXmlFiles>
                         </configuration>
             </plugin>
